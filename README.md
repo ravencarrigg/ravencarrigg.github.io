@@ -1,6 +1,6 @@
 # Raven Indigo Carrigg
 
-Raven Indigo Carrigg, also known as Raven Carrigg, is a Portland-based nonbinary poet, author, OHA-certified Peer Support Specialist, and trauma-informed systems navigator. They are the author of *Liminal Afterhood: Fragments from the Edge of Survival*, an experimental poetry collection and trauma-survival archive exploring suicide survival, trauma memory, queer and trans identity, nonlinear recovery, rupture, self-reclamation, lived-experience storytelling, and computational poetics.
+Raven Indigo Carrigg (also known as Raven Carrigg) is a Portland-based nonbinary poet, author, OHA-certified Peer Support Specialist, and trauma-informed systems navigator. They are the author of *Liminal Afterhood: Fragments from the Edge of Survival*, an experimental poetry collection and trauma-survival archive exploring suicide survival, trauma memory, queer and trans identity, nonlinear recovery, rupture, self-reclamation, lived-experience storytelling, and computational poetics.
 
 ## About this site
 
