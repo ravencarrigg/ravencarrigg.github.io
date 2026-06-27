@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Raven Indigo Carrigg | Author, Poet & Peer Support Specialist</title>
+  <title>Raven Carrigg | Author, Poet & Peer Support Specialist</title>
 
   <meta name="description" content="Raven Carrigg, also known as Raven Indigo Carrigg, is a Portland-based nonbinary poet, author of Liminal Afterhood: Fragments from the Edge of Survival, OHA-certified Peer Support Specialist, and trauma-informed systems navigator." />
 
@@ -17,12 +17,12 @@
   <meta property="og:description" content="Raven Carrigg, also known as Raven Indigo Carrigg, is a Portland-based nonbinary poet, author of Liminal Afterhood, OHA-certified Peer Support Specialist, and trauma-informed systems navigator." />
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://ravencarrigg.github.io/" />
-  <meta property="og:image" content="https://ravencarrigg.github.io/avatar.jpg" />
+  <meta property="og:image" content="https://ravencarrigg.github.io/liminal_cover.jpg" />
 
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Raven Carrigg | Author, Poet & Peer Support Specialist" />
   <meta name="twitter:description" content="Portland-based nonbinary poet, author of Liminal Afterhood, OHA-certified Peer Support Specialist, and trauma-informed systems navigator." />
-  <meta name="twitter:image" content="https://ravencarrigg.github.io/avatar.jpg" />
+  <meta name="twitter:image" content="https://ravencarrigg.github.io/liminal_cover.jpg" />
 
   <script type="application/ld+json">
   {
@@ -76,7 +76,16 @@
         "@type": "Book",
         "@id": "https://ravencarrigg.github.io/liminal-afterhood/#book",
         "name": "Liminal Afterhood: Fragments from the Edge of Survival",
-        "url": "https://ravencarrigg.github.io/liminal-afterhood/"
+        "url": "https://ravencarrigg.github.io/liminal-afterhood/",
+        "image": "https://ravencarrigg.github.io/liminal_cover.jpg",
+        "genre": [
+          "Experimental poetry",
+          "Trauma-survival writing",
+          "Queer poetry",
+          "Trans poetry",
+          "Computational poetics"
+        ],
+        "description": "Liminal Afterhood: Fragments from the Edge of Survival is an experimental poetry collection and trauma-survival archive by Raven Indigo Carrigg exploring suicide survival, trauma memory, queer and trans identity, rupture, nonlinear recovery, and self-reclamation through lyric poetry, free verse, archival fragments, field notes, and computationally recombined language."
       }
     }
   }
@@ -127,7 +136,7 @@
     }
 
     main {
-      width: min(980px, calc(100% - 2rem));
+      width: min(1040px, calc(100% - 2rem));
       margin: 0 auto;
       padding: 4rem 0;
       position: relative;
@@ -194,7 +203,7 @@
     .intro {
       font-size: 1.14rem;
       color: #1f2937;
-      max-width: 760px;
+      max-width: 780px;
     }
 
     .intro p:first-child {
@@ -202,7 +211,7 @@
     }
 
     h2 {
-      margin: 2.5rem 0 0.8rem;
+      margin: 0 0 0.8rem;
       font-size: 1.2rem;
       letter-spacing: -0.02em;
       color: var(--indigo);
@@ -220,6 +229,56 @@
 
     a:hover {
       color: var(--blue-dark);
+    }
+
+    .book-feature {
+      display: grid;
+      grid-template-columns: minmax(180px, 260px) 1fr;
+      gap: 2.2rem;
+      align-items: center;
+      margin-top: 3rem;
+      padding: 1.6rem;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at top left, rgba(219, 234, 254, 0.9), transparent 20rem),
+        rgba(248, 250, 252, 0.72);
+    }
+
+    .cover-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .cover {
+      width: min(100%, 245px);
+      border-radius: 16px;
+      box-shadow:
+        0 24px 54px rgba(15, 23, 42, 0.26),
+        0 0 0 1px rgba(255, 255, 255, 0.85);
+      background: #dbeafe;
+    }
+
+    .book-copy {
+      font-size: 1.03rem;
+      color: #1f2937;
+    }
+
+    .book-copy p {
+      margin: 0.8rem 0;
+    }
+
+    .book-label {
+      display: inline-flex;
+      margin-bottom: 0.7rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      background: var(--lavender);
+      color: var(--indigo);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .buttons {
@@ -286,9 +345,19 @@
       font-size: 0.92rem;
     }
 
+    @media (max-width: 800px) {
+      .book-feature {
+        grid-template-columns: 1fr;
+      }
+
+      .cover {
+        max-width: 220px;
+      }
+    }
+
     @media (max-width: 720px) {
       main {
-        width: min(100% - 1rem, 980px);
+        width: min(100% - 1rem, 1040px);
         padding: 0.5rem 0;
       }
 
@@ -310,6 +379,10 @@
 
       .intro {
         font-size: 1.05rem;
+      }
+
+      .book-feature {
+        padding: 1.2rem;
       }
     }
   </style>
@@ -333,11 +406,7 @@
       <div class="content">
         <section class="intro">
           <p>
-            Raven Carrigg, also known as Raven Indigo Carrigg, is a nonbinary poet, author, OHA-certified Peer Support Specialist, and trauma-informed systems navigator based in Portland, Oregon.
-          </p>
-
-          <p>
-            Their work moves through suicide survival, trauma memory, queer and trans identity, rupture, nonlinear recovery, self-reclamation, lived-experience storytelling, and computational poetics.
+            Raven Indigo Carrigg (also known as Raven Carrigg) is a nonbinary poet, author, OHA-certified Peer Support Specialist, and trauma-informed systems navigator based in Portland, Oregon. Their work moves through suicide survival, trauma memory, queer and trans identity, rupture, nonlinear recovery, self-reclamation, lived-experience storytelling, and computational poetics.
           </p>
 
           <p>
@@ -345,16 +414,27 @@
           </p>
         </section>
 
-        <section>
-          <h2>Liminal Afterhood</h2>
+        <section class="book-feature">
+          <div class="cover-wrap">
+            <img class="cover" src="liminal_cover.jpg" alt="Cover of Liminal Afterhood: Fragments from the Edge of Survival by Raven Indigo Carrigg" />
+          </div>
 
-          <p>
-            <em>Liminal Afterhood: Fragments from the Edge of Survival</em> explores suicide survival, trauma memory, queer and trans identity, rupture, nonlinear recovery, and self-reclamation through lyric poetry, free verse, archival fragments, field notes, and recombinant language.
-          </p>
+          <div class="book-copy">
+            <span class="book-label">Debut collection</span>
+            <h2>Liminal Afterhood</h2>
 
-          <div class="buttons">
-            <a class="button" href="https://amazon.com/author/ravencarrigg">Amazon Author Page</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/raven-carrigg">LinkedIn</a>
+            <p>
+              <em>Liminal Afterhood: Fragments from the Edge of Survival</em> is an experimental poetry collection and trauma-survival archive exploring suicide survival, trauma memory, queer and trans identity, rupture, nonlinear recovery, and self-reclamation.
+            </p>
+
+            <p>
+              Assembled from lyric poetry, free verse, archival fragments, field notes, and computationally recombined language, the collection traces what burns, what breaks down, what refuses to die, and what begins to grow in the wreckage.
+            </p>
+
+            <div class="buttons">
+              <a class="button" href="https://amazon.com/author/ravencarrigg">Amazon Author Page</a>
+              <a class="button secondary" href="https://www.linkedin.com/in/raven-carrigg">LinkedIn</a>
+            </div>
           </div>
         </section>
 
