@@ -18,6 +18,7 @@ This website serves as a living portfolio and public archive for Raven’s creat
 - [Website](https://ravencarrigg.github.io/)
 - [Amazon Author Page](https://amazon.com/author/ravencarrigg)
 - [LinkedIn](https://www.linkedin.com/in/raven-carrigg)
+- [GitHub](https://github.com/ravencarrigg)
 - [YouTube](https://www.youtube.com/@ravencarrigg411)
 
 ## About this repository
