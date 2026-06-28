@@ -4,24 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Raven Indigo Carrigg | Queer Poet, Computational Modeler & Peer Support Specialist</title>
+  <title>Raven Indigo Carrigg | Queer Poet, Computational Artist & Peer Support Specialist</title>
 
-  <meta name="description" content="Raven Indigo Carrigg is a Portland, Oregon queer poet, computational modeler, creative coder, and peer support specialist exploring experimental poetry, computational poetics, trauma-survival writing, complex systems, emergence, and lived experience." />
+  <meta name="description" content="Raven Indigo Carrigg is a Portland, Oregon queer poet, computational artist, creative coder, and peer support specialist exploring experimental poetry, computational poetics, trauma-survival writing, complex systems, emergence, and lived experience." />
 
   <meta name="author" content="Raven Indigo Carrigg" />
   <meta name="robots" content="index, follow" />
 
   <link rel="canonical" href="https://ravencarrigg.github.io/" />
 
-  <meta property="og:title" content="Raven Indigo Carrigg | Queer Poet, Computational Modeler & Peer Support Specialist" />
-  <meta property="og:description" content="Personal website and creative archive for Raven Indigo Carrigg, exploring poetry, computational poetics, creative coding, complex systems, emergence, trauma-survival writing, queer/trans poetics, and lived experience." />
+  <meta property="og:title" content="Raven Indigo Carrigg | Queer Poet, Computational Artist & Peer Support Specialist" />
+  <meta property="og:description" content="Personal website and creative archive for Raven Indigo Carrigg, exploring poetry, computational poetics, creative coding, computational art, complex systems, emergence, trauma-survival writing, queer/trans poetics, and lived experience." />
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://ravencarrigg.github.io/" />
   <meta property="og:image" content="https://ravencarrigg.github.io/liminal_cover.jpg" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Raven Indigo Carrigg | Queer Poet, Computational Modeler & Peer Support Specialist" />
-  <meta name="twitter:description" content="Queer poet, computational modeler, creative coder, and peer support specialist exploring language, number, pattern, lived experience, and emergent forms of meaning-making." />
+  <meta name="twitter:title" content="Raven Indigo Carrigg | Queer Poet, Computational Artist & Peer Support Specialist" />
+  <meta name="twitter:description" content="Queer poet, computational artist, creative coder, and peer support specialist exploring language, number, pattern, lived experience, and emergent forms of meaning-making." />
   <meta name="twitter:image" content="https://ravencarrigg.github.io/liminal_cover.jpg" />
 
   <script type="application/ld+json">
@@ -29,11 +29,25 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://ravencarrigg.github.io/#website",
+        "url": "https://ravencarrigg.github.io/",
+        "name": "Raven Indigo Carrigg",
+        "description": "Personal website and creative archive for Raven Indigo Carrigg, a queer poet, computational artist, creative coder, and peer support specialist based in Portland, Oregon.",
+        "publisher": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        },
+        "inLanguage": "en"
+      },
+      {
         "@type": "ProfilePage",
         "@id": "https://ravencarrigg.github.io/#profile",
         "url": "https://ravencarrigg.github.io/",
         "name": "Raven Indigo Carrigg",
-        "description": "Personal website and creative archive for Raven Indigo Carrigg, a Portland, Oregon queer poet, computational modeler, creative coder, and peer support specialist exploring experimental poetry, computational poetics, complex systems, emergence, trauma-survival writing, queer/trans poetics, and lived experience.",
+        "description": "Personal website and creative archive for Raven Indigo Carrigg, a Portland, Oregon queer poet, computational artist, creative coder, and peer support specialist exploring experimental poetry, computational poetics, computational art, complex systems, emergence, trauma-survival writing, queer/trans poetics, and lived experience.",
+        "isPartOf": {
+          "@id": "https://ravencarrigg.github.io/#website"
+        },
         "mainEntity": {
           "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
         }
@@ -50,7 +64,7 @@
         "familyName": "Carrigg",
         "pronouns": "they/them",
         "gender": "Nonbinary",
-        "description": "Raven Indigo Carrigg is a queer poet, computational modeler, creative coder, and peer support specialist based in Portland, Oregon. Their work explores where language, number, and pattern meet lived experience as emergent forms of meaning-making, tracing complexity, reclaiming voice, and finding shape at the edge of chaos.",
+        "description": "Raven Indigo Carrigg is a queer poet, computational artist, creative coder, computational modeler, and peer support specialist based in Portland, Oregon. Their work explores where language, number, and pattern meet lived experience as emergent forms of meaning-making, tracing complexity, reclaiming voice, and finding shape at the edge of chaos.",
         "url": "https://ravencarrigg.github.io/",
         "image": "https://ravencarrigg.github.io/avatar.jpg",
         "sameAs": [
@@ -60,8 +74,9 @@
         "jobTitle": [
           "Poet",
           "Author",
-          "Computational Modeler",
+          "Computational Artist",
           "Creative Coder",
+          "Computational Modeler",
           "Peer Support Specialist"
         ],
         "knowsAbout": [
@@ -96,7 +111,7 @@
         "image": "https://ravencarrigg.github.io/liminal_cover.jpg",
         "description": "Liminal Afterhood: Fragments from the Edge of Survival is an experimental poetry collection and trauma-survival archive by Raven Indigo Carrigg exploring suicide survival, trauma memory, queer and trans identity, rupture, nonlinear recovery, and self-reclamation through lyric poetry, free verse, archival fragments, field notes, and computationally recombined language.",
         "inLanguage": "en",
-        "datePublished": "2026-06-21",
+        "datePublished": "2026-06-27",
         "genre": [
           "Experimental poetry",
           "Trauma-survival writing",
@@ -225,7 +240,7 @@
     .intro {
       font-size: 1.14rem;
       color: #1f2937;
-      max-width: 780px;
+      max-width: 820px;
     }
 
     .intro p:first-child {
@@ -251,6 +266,31 @@
 
     a:hover {
       color: var(--blue-dark);
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2.6rem;
+    }
+
+    .work-card {
+      padding: 1.15rem 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(248, 250, 252, 0.72);
+      color: #1f2937;
+    }
+
+    .work-card h2 {
+      margin-bottom: 0.45rem;
+    }
+
+    .work-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
     }
 
     .book-feature {
@@ -367,6 +407,12 @@
       font-size: 0.92rem;
     }
 
+    @media (max-width: 900px) {
+      .work-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 800px) {
       .book-feature {
         grid-template-columns: 1fr;
@@ -428,7 +474,7 @@
         <img class="avatar" src="avatar.jpg" alt="Portrait image representing Raven Indigo Carrigg" />
         
         <div>
-          <p class="eyebrow">Queer Poet · Computational Modeler · Peer Support Specialist</p>
+          <p class="eyebrow">Queer Poet · Computational Artist · Peer Support Specialist</p>
           <h1>Raven Indigo Carrigg</h1>
           <p class="subtitle">
             nonbinary corvid · they/them · Portland, Oregon
@@ -439,16 +485,39 @@
       <div class="content">
         <section class="intro">
           <p>
-            Raven Indigo Carrigg is a queer and nonbinary poet, computational modeler, creative coder, and peer support specialist based in Portland, Oregon. Their work explores where language, number, and pattern meet lived experience as emergent forms of meaning-making, tracing complexity, reclaiming voice, and finding shape at the edge of chaos.
+            Raven Indigo Carrigg is a queer and nonbinary poet, computational artist, creative coder, and peer support specialist based in Portland, Oregon. Their work explores where language, number, and pattern meet lived experience as emergent forms of meaning-making, tracing complexity, reclaiming voice, and finding shape at the edge of chaos.
           </p>
 
           <p>
-            Their creative practice moves across experimental poetry, computational poetics, creative coding, computational art, trauma-survival writing, queer/trans poetics, complex systems, emergence, pattern formation, and nonlinear recovery.
+            Their creative practice moves across experimental poetry, computational poetics, creative coding, computational art, trauma-survival writing, queer/trans poetics, complex systems, emergence, pattern formation, nonlinear dynamics, and nonlinear recovery.
           </p>
 
           <p>
             Raven is the author of <em>Liminal Afterhood: Fragments from the Edge of Survival</em>, an experimental poetry collection and trauma-survival archive assembled from lyric poetry, free verse, personal archival fragments, field notes, and computationally recombined language.
           </p>
+        </section>
+
+        <section class="work-grid" aria-label="Areas of work">
+          <div class="work-card">
+            <h2>Poetry & poetics</h2>
+            <p>
+              Experimental poetry, queer/trans poetics, trauma-survival writing, archival fragments, and language that gives form to nonlinear experience.
+            </p>
+          </div>
+
+          <div class="work-card">
+            <h2>Computational art</h2>
+            <p>
+              Creative coding, computational poetics, recombined language, visual systems, and model-born art shaped by pattern, abstraction, and emergence.
+            </p>
+          </div>
+
+          <div class="work-card">
+            <h2>Systems & lived experience</h2>
+            <p>
+              Complex systems, pattern formation, nonlinear dynamics, peer support values, and meaning-making rooted in lived experience.
+            </p>
+          </div>
         </section>
 
         <section class="book-feature">
@@ -484,7 +553,7 @@
           <p><strong>Searchable names:</strong> Raven Indigo Carrigg, Raven Carrigg</p>
           <p><strong>Pronouns:</strong> they/them</p>
           <p><strong>Location:</strong> Portland, Oregon</p>
-          <p><strong>Public roles:</strong> queer poet, author, computational modeler, creative coder, peer support specialist</p>
+          <p><strong>Public roles:</strong> queer poet, author, computational artist, creative coder, computational modeler, peer support specialist</p>
           <p><strong>Creative fields:</strong> experimental poetry, computational poetics, creative coding, computational art, trauma-survival writing, queer/trans poetry</p>
           <p><strong>Systems interests:</strong> complex systems, emergence, pattern formation, nonlinear dynamics, systems thinking, lived experience</p>
         </section>
