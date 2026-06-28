@@ -1,10 +1,10 @@
 # Raven Indigo Carrigg
 
-Personal website and creative archive for Raven Indigo Carrigg, a queer poet, computational modeler, and peer support specialist based in Portland, Oregon. Raven explores where language, number, and pattern meet lived experience as emergent forms of meaning-making, tracing complexity, reclaiming voice, and finding shape at the edge of chaos.
+This repository hosts the personal website and creative archive of Raven Indigo Carrigg, a queer poet, computational modeler, creative coder, and peer support specialist based in Portland, Oregon. The site brings together poetry, computational poetics, creative coding, systems thinking, and lived-experience work. Across these projects, Raven explores how language, number, and pattern become emergent forms for tracing complexity, reclaiming voice, and making meaning at the edge of chaos.
 
 ## About this site
 
-This site gathers Raven’s creative, computational, and systems-oriented work, including experimental poetry, computational poetics, creative coding, trauma-survival writing, queer/trans poetics, and public project archives. It serves as a living portfolio and creative archive for work exploring complexity, survival, identity, transformation, and the forms that emerge when abstraction meets lived experience.
+This website serves as a living portfolio and public archive for Raven’s creative, computational, and systems-oriented work. It includes information about *Liminal Afterhood: Fragments from the Edge of Survival*, along with experimental poetry, trauma-survival writing, queer/trans poetics, computational art, generative language projects, and public project documentation.
 
 ## Featured work
 
