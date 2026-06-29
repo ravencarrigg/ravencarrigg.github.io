@@ -383,21 +383,26 @@
       text-transform: uppercase;
     }
 
-    .systems-preview {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.65rem;
-      margin: 1.15rem 0 0.35rem;
+    .systems-feature {
+      grid-template-columns: minmax(180px, 300px) 1fr;
     }
 
-    .systems-preview img {
+    .systems-image-stack {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .systems-image-stack img {
       width: 100%;
       aspect-ratio: 4 / 3;
       object-fit: cover;
       display: block;
-      border-radius: 14px;
+      border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.9);
-      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+      box-shadow:
+        0 16px 34px rgba(15, 23, 42, 0.18),
+        0 0 0 1px rgba(255, 255, 255, 0.72);
       background: #dbeafe;
     }
 
@@ -479,6 +484,14 @@
       .cover {
         max-width: 220px;
       }
+
+      .systems-feature {
+        grid-template-columns: 1fr;
+      }
+
+      .systems-image-stack {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
     @media (max-width: 720px) {
@@ -510,8 +523,10 @@
       .book-feature {
         padding: 1.2rem;
       }
+    }
 
-      .systems-preview {
+    @media (max-width: 520px) {
+      .systems-image-stack {
         grid-template-columns: 1fr;
       }
     }
@@ -625,23 +640,23 @@
             <img src="raven_carrigg_qgis_dem_boring_lava_fields.webp" alt="QGIS digital elevation model visualization of the Boring Lava Fields in Oregon by Raven Carrigg." />
             <img src="raven_carrigg_landsat_sentinelhub_bear_glacier.webp" alt="Bear Glacier, Alaska LANDSAT time-series preview by Raven Carrigg showing glacial retreat and landscape change." />
           </div>
-        
+
           <div class="book-copy">
             <span class="book-label">Complex systems</span>
             <h2>Systems and simulations</h2>
-        
+
             <p>
               Raven’s computational work explores how patterns emerge from simple rules, nonlinear interactions, spatial data, networks, and visual systems.
             </p>
-        
+
             <p>
               Projects move through artificial life, mathematical modeling, remote sensing, terrain visualization, environmental time series, and experiments with language, number, and form.
             </p>
-        
+
             <p>
               <em>A dedicated project page gathers simulations, visualizations, videos, research, and computational experiments.</em>
             </p>
-        
+
             <div class="buttons">
               <a class="button" href="https://ravencarrigg.github.io/systems-and-simulations/">Explore Projects</a>
               <a class="button secondary" href="https://www.youtube.com/@ravencarrigg411">YouTube Channel</a>
