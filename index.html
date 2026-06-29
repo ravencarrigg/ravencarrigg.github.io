@@ -384,14 +384,15 @@
     }
 
     .systems-feature {
-      grid-template-columns: minmax(120px, 170px) 1fr;
-      align-items: center;
+      grid-template-columns: minmax(180px, 260px) 1fr;
     }
 
     .systems-preview {
+      width: min(100%, 245px);
+      margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 0.6rem;
+      gap: 0.62rem;
     }
 
     .systems-preview img {
@@ -402,7 +403,7 @@
       border-radius: 14px;
       border: 1px solid rgba(255, 255, 255, 0.9);
       box-shadow:
-        0 12px 26px rgba(15, 23, 42, 0.15),
+        0 12px 26px rgba(15, 23, 42, 0.14),
         0 0 0 1px rgba(255, 255, 255, 0.72);
       background: #dbeafe;
     }
@@ -486,12 +487,9 @@
         max-width: 220px;
       }
 
-      .systems-feature {
-        grid-template-columns: 1fr;
-      }
-
       .systems-preview {
         grid-template-columns: repeat(3, 1fr);
+        width: 100%;
       }
     }
 
@@ -636,10 +634,12 @@
         </section>
 
         <section class="book-feature systems-feature">
-          <div class="systems-preview" aria-label="Preview images from Raven Carrigg's systems and simulations work">
-            <img src="raven_carrigg_artificial_life_lenia_orbium.webp" alt="Lenia Orbium artificial life visualization by Raven Carrigg exploring emergence, pattern formation, and computational systems." />
-            <img src="raven_carrigg_qgis_dem_boring_lava_fields.webp" alt="QGIS digital elevation model visualization of the Boring Lava Fields in Oregon by Raven Carrigg." />
-            <img src="raven_carrigg_landsat_sentinelhub_bear_glacier.webp" alt="Bear Glacier, Alaska LANDSAT time-series preview by Raven Carrigg showing glacial retreat and landscape change." />
+          <div class="cover-wrap">
+            <div class="systems-preview" aria-label="Preview images from Raven Carrigg's systems and simulations work">
+              <img src="raven_carrigg_artificial_life_lenia_orbium.webp" alt="Lenia Orbium artificial life visualization by Raven Carrigg exploring emergence, pattern formation, and computational systems." />
+              <img src="raven_carrigg_qgis_dem_boring_lava_fields.webp" alt="QGIS digital elevation model visualization of the Boring Lava Fields in Oregon by Raven Carrigg." />
+              <img src="raven_carrigg_landsat_sentinelhub_bear_glacier.webp" alt="Bear Glacier, Alaska LANDSAT time-series preview by Raven Carrigg showing glacial retreat and landscape change." />
+            </div>
           </div>
 
           <div class="book-copy">
@@ -647,11 +647,11 @@
             <h2>Systems and simulations</h2>
         
             <p>
-              Raven’s computational work explores how patterns emerge from simple rules, nonlinear interactions, spatial data, networks, and visual systems.
+              Raven’s computational work explores how patterns emerge from simple rules, nonlinear interactions, spatial data, networks, and visual systems. Projects move through artificial life, mathematical modeling, remote sensing, terrain visualization, environmental time series, and experiments with language, number, and form.
             </p>
-        
+
             <p>
-              Projects move through artificial life, mathematical modeling, remote sensing, terrain visualization, environmental time series, and experiments with language, number, and form.
+              These projects treat computation as both analytic tool and visual language: a way to study emergence, landscape, movement, and change across scales.
             </p>
         
             <p>
