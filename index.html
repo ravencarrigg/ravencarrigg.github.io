@@ -384,35 +384,29 @@
     }
 
     .systems-feature {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(120px, 170px) 1fr;
+      align-items: center;
     }
-    
+
     .systems-preview {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.75rem;
-      margin: 1.2rem 0 0.55rem;
+      grid-template-columns: 1fr;
+      gap: 0.6rem;
     }
-    
+
     .systems-preview img {
       width: 100%;
       aspect-ratio: 4 / 3;
       object-fit: cover;
       display: block;
-      border-radius: 16px;
+      border-radius: 14px;
       border: 1px solid rgba(255, 255, 255, 0.9);
       box-shadow:
-        0 14px 30px rgba(15, 23, 42, 0.16),
+        0 12px 26px rgba(15, 23, 42, 0.15),
         0 0 0 1px rgba(255, 255, 255, 0.72);
       background: #dbeafe;
     }
-    
-    @media (max-width: 720px) {
-      .systems-preview {
-        grid-template-columns: 1fr;
-      }
-      
-    }
+
     .buttons {
       display: flex;
       flex-wrap: wrap;
@@ -496,7 +490,7 @@
         grid-template-columns: 1fr;
       }
 
-      .systems-image-stack {
+      .systems-preview {
         grid-template-columns: repeat(3, 1fr);
       }
     }
@@ -533,7 +527,7 @@
     }
 
     @media (max-width: 520px) {
-      .systems-image-stack {
+      .systems-preview {
         grid-template-columns: 1fr;
       }
     }
@@ -642,6 +636,12 @@
         </section>
 
         <section class="book-feature systems-feature">
+          <div class="systems-preview" aria-label="Preview images from Raven Carrigg's systems and simulations work">
+            <img src="raven_carrigg_artificial_life_lenia_orbium.webp" alt="Lenia Orbium artificial life visualization by Raven Carrigg exploring emergence, pattern formation, and computational systems." />
+            <img src="raven_carrigg_qgis_dem_boring_lava_fields.webp" alt="QGIS digital elevation model visualization of the Boring Lava Fields in Oregon by Raven Carrigg." />
+            <img src="raven_carrigg_landsat_sentinelhub_bear_glacier.webp" alt="Bear Glacier, Alaska LANDSAT time-series preview by Raven Carrigg showing glacial retreat and landscape change." />
+          </div>
+
           <div class="book-copy">
             <span class="book-label">Complex systems</span>
             <h2>Systems and simulations</h2>
@@ -653,12 +653,6 @@
             <p>
               Projects move through artificial life, mathematical modeling, remote sensing, terrain visualization, environmental time series, and experiments with language, number, and form.
             </p>
-        
-            <div class="systems-preview" aria-label="Preview images from Raven Carrigg's systems and simulations work">
-              <img src="raven_carrigg_artificial_life_lenia_orbium.webp" alt="Lenia Orbium artificial life visualization by Raven Carrigg exploring emergence, pattern formation, and computational systems." />
-              <img src="raven_carrigg_qgis_dem_boring_lava_fields.webp" alt="QGIS digital elevation model visualization of the Boring Lava Fields in Oregon by Raven Carrigg." />
-              <img src="raven_carrigg_landsat_sentinelhub_bear_glacier.webp" alt="Bear Glacier, Alaska LANDSAT time-series preview by Raven Carrigg showing glacial retreat and landscape change." />
-            </div>
         
             <p>
               <em>A dedicated project page gathers simulations, visualizations, videos, research, and computational experiments.</em>
@@ -676,7 +670,7 @@
           <p><strong>Pronouns:</strong> they/them</p>
           <p><strong>Location:</strong> Portland, Oregon</p>
           <p><strong>Public roles:</strong> queer poet, author, systems thinker, computational artist, creative coder, computational modeler, peer support specialist</p>
-          <p><strong>Creative practice:</strong> experimental poetry, computational poetics, creative coding, computational art, computational visualization, trauma-survival writing, queer/trans poetics, lived-experience storytelling</p>
+          <p><strong>Creative practice:</strong> experimental poetry, computational poetics, creative coding, computational art, computational visualization, trauma-survival writing, queer poetics, lived-experience storytelling</p>
           <p><strong>Mathematical and systems interests:</strong> mathematics, abstraction, complex systems, emergence, pattern formation, nonlinear dynamics, modeling, simulation, visualization, remote sensing, social networks, and the relationships between language, number, and pattern</p>
           <p><strong>Peer perspective:</strong> lived experience, nonlinear recovery, systems navigation, self-determination, voice, dignity, cultural humility, trauma-informed practice, and care that supports people through crisis, stigma, transition, and systemic harm</p>
           <p><strong>Public links:</strong> <a href="https://github.com/ravencarrigg">GitHub</a> · <a href="https://www.linkedin.com/in/raven-carrigg">LinkedIn</a> · <a href="https://www.youtube.com/@ravencarrigg411">YouTube</a> · <a href="https://amazon.com/author/ravencarrigg">Amazon Author Page</a></p>
