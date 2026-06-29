@@ -383,6 +383,24 @@
       text-transform: uppercase;
     }
 
+    .systems-preview {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.65rem;
+      margin: 1.15rem 0 0.35rem;
+    }
+
+    .systems-preview img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+      background: #dbeafe;
+    }
+
     .buttons {
       display: flex;
       flex-wrap: wrap;
@@ -491,6 +509,10 @@
 
       .book-feature {
         padding: 1.2rem;
+      }
+
+      .systems-preview {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -613,6 +635,12 @@
             <p>
               Projects move through cellular automata, artificial life, mathematical modeling, remote sensing, terrain visualization, environmental time series, and experiments with language, number, and form.
             </p>
+
+            <div class="systems-preview" aria-label="Preview images from Raven Carrigg's systems and simulations work">
+              <img src="raven_carrigg_artificial_life_lenia_orbium.webp" alt="Lenia Orbium artificial life visualization by Raven Carrigg." />
+              <img src="raven_carrigg_qgis_dem_boring_lava_fields.webp" alt="QGIS digital elevation model visualization of the Boring Lava Fields in Oregon by Raven Carrigg." />
+              <img src="raven_carrigg_raven_carrigg_landsat_sentinelhub_bear_glacier.webp" alt="Bear Glacier, Alaska LANDSAT time-series preview by Raven Carrigg showing glacial retreat and landscape change." />
+            </div>
 
             <p>
               <em>A dedicated project page gathers simulations, visualizations, videos, research, and computational experiments.</em>
