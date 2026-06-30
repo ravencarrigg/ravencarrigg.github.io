@@ -343,23 +343,17 @@
       grid-column: 1 / -1;
     }
 
-    .rotated-media {
-      position: relative;
+    .ucayali-media {
       width: 100%;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
       background: #0f172a;
     }
 
-    .rotated-media video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: auto;
-      height: 100%;
+    .ucayali-media video {
+      width: 100%;
+      height: auto;
+      max-height: 720px;
       object-fit: contain;
-      transform: translate(-50%, -50%) rotate(90deg);
-      transform-origin: center;
+      display: block;
       background: #0f172a;
     }
 
@@ -479,7 +473,7 @@
           </p>
 
           <p>
-            These projects grow from a background in applied mathematics, computational modeling, environmental data analysis, documentation, creative coding, and hands-on systems building. They explore how form emerges from rules, data, feedback, spatial structure, nonlinear interaction, and time.
+            These projects grow from a background in applied mathematics, computational modeling, environmental data analysis, creative coding, research, and documentation. They explore how form emerges from rules, data, feedback, spatial structure, nonlinear interaction, and time.
           </p>
 
           <p>
@@ -492,7 +486,7 @@
             <p class="eyebrow">Artificial life</p>
             <h2>Lenia and Orbium</h2>
             <p>
-              Lenia is a continuous cellular automata system for artificial life, developed by Bert Wang-Chak Chan. Orbium is one of its most recognizable self-organizing lifeforms: a small computational organism whose motion and persistence emerge from local update rules.
+              Lenia is a continuous cellular automaton for artificial life, developed by Bert Wang-Chak Chan. Orbium is one of its most recognizable self-organizing lifeforms: a small computational organism whose motion and persistence emerge from local update rules.
             </p>
           </div>
 
@@ -680,7 +674,7 @@
             </figure>
 
             <figure class="project-item wide">
-              <div class="rotated-media">
+              <div class="ucayali-media">
                 <video autoplay muted loop playsinline>
                   <source src="raven_carrigg_landsat_sentinelhub_ucayali_river.webm" type="video/webm">
                   <source src="raven_carrigg_landsat_sentinelhub_ucayali_river.mp4" type="video/mp4">
@@ -688,7 +682,7 @@
               </div>
               <figcaption>
                 <strong>Ucayali River, Peru.</strong>
-                LANDSAT time series showing river meander migration, floodplain change, oxbow formation, and shifting water-land boundaries. Rotated here so the long river sequence reads as a wide landscape study while preserving the temporal frame.
+                LANDSAT time series showing river meander migration, floodplain change, oxbow formation, and shifting water-land boundaries across time.
               </figcaption>
             </figure>
           </div>
