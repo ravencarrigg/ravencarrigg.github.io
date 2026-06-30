@@ -6,7 +6,7 @@
 
   <title>Systems and Simulations | Raven Indigo Carrigg</title>
 
-  <meta name="description" content="Systems and Simulations is a project archive by Raven Indigo Carrigg featuring computational art, artificial life, cyclic cellular automata, terrain visualization, remote sensing, LANDSAT time series, mathematical modeling, environmental data analysis, and complex systems experiments." />
+  <meta name="description" content="Systems and Simulations is a project archive by Raven Indigo Carrigg featuring computational art, artificial life, cyclic cellular automata, terrain visualization, remote sensing, LANDSAT time series, mathematical modeling, environmental data analysis, biomechanics, and complex systems experiments." />
 
   <meta name="author" content="Raven Indigo Carrigg" />
   <meta name="robots" content="index, follow" />
@@ -14,14 +14,14 @@
   <link rel="canonical" href="https://ravencarrigg.github.io/systems-and-simulations/" />
 
   <meta property="og:title" content="Systems and Simulations | Raven Indigo Carrigg" />
-  <meta property="og:description" content="Computational art, artificial life, cellular automata, terrain visualization, remote sensing, LANDSAT time series, mathematical modeling, environmental data analysis, and complex systems experiments by Raven Indigo Carrigg." />
+  <meta property="og:description" content="Computational art, artificial life, cellular automata, biomechanics, terrain visualization, remote sensing, LANDSAT time series, mathematical modeling, environmental data analysis, and complex systems experiments by Raven Indigo Carrigg." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ravencarrigg.github.io/systems-and-simulations/" />
   <meta property="og:image" content="https://ravencarrigg.github.io/systems-and-simulations/raven_carrigg_artificial_life_lenia_orbium.webp" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Systems and Simulations | Raven Indigo Carrigg" />
-  <meta name="twitter:description" content="Computational art, artificial life, cellular automata, terrain visualization, remote sensing, mathematical modeling, and complex systems experiments by Raven Indigo Carrigg." />
+  <meta name="twitter:description" content="Computational art, artificial life, cellular automata, biomechanics, terrain visualization, remote sensing, mathematical modeling, and complex systems experiments by Raven Indigo Carrigg." />
   <meta name="twitter:image" content="https://ravencarrigg.github.io/systems-and-simulations/raven_carrigg_artificial_life_lenia_orbium.webp" />
 
   <script type="application/ld+json">
@@ -32,7 +32,7 @@
     "url": "https://ravencarrigg.github.io/systems-and-simulations/",
     "name": "Systems and Simulations",
     "alternateName": "Complex Systems Projects",
-    "description": "Systems and Simulations is a project archive by Raven Indigo Carrigg featuring computational art, artificial life, cyclic cellular automata, terrain visualization, remote sensing, LANDSAT time series, mathematical modeling, environmental data analysis, and complex systems experiments.",
+    "description": "Systems and Simulations is a project archive by Raven Indigo Carrigg featuring computational art, artificial life, cyclic cellular automata, terrain visualization, remote sensing, LANDSAT time series, mathematical modeling, environmental data analysis, biomechanics, and complex systems experiments.",
     "inLanguage": "en",
     "image": "https://ravencarrigg.github.io/systems-and-simulations/raven_carrigg_artificial_life_lenia_orbium.webp",
     "creator": {
@@ -65,6 +65,7 @@
       "Terrain visualization",
       "Mathematical modeling",
       "Environmental data analysis",
+      "Biomechanics",
       "Emergence",
       "Pattern formation"
     ]
@@ -349,13 +350,49 @@
       background: #0f172a;
       overflow: hidden;
     }
-    
+
     .ucayali-media video {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
       background: #0f172a;
+    }
+
+    .research-card {
+      display: grid;
+      grid-template-columns: minmax(210px, 320px) 1fr;
+      gap: 1.4rem;
+      align-items: start;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.68);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+    }
+
+    .research-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      border-radius: 16px;
+      background: #dbeafe;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+    }
+
+    .research-copy {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .research-copy p {
+      margin: 0.55rem 0;
+    }
+
+    .research-copy strong {
+      color: #1f2937;
     }
 
     .note {
@@ -370,6 +407,17 @@
 
     .note p {
       margin: 0.45rem 0;
+    }
+
+    .throughline-simple {
+      margin-top: 3rem;
+      max-width: 850px;
+      color: #1f2937;
+      font-size: 1.08rem;
+    }
+
+    .throughline-simple p {
+      margin: 0.85rem 0;
     }
 
     footer {
@@ -394,6 +442,14 @@
       .project-grid,
       .project-grid.three {
         grid-template-columns: 1fr;
+      }
+
+      .research-card {
+        grid-template-columns: 1fr;
+      }
+
+      .research-card img {
+        max-width: 420px;
       }
     }
 
@@ -485,9 +541,9 @@
         <section class="section" id="artificial-life">
           <div class="section-header">
             <p class="eyebrow">Artificial life</p>
-            <h2>Lenia and Orbium</h2>
+            <h2>Lenia and <em>Orbium</em></h2>
             <p>
-              Lenia is a continuous cellular automaton for artificial life, developed by Bert Wang-Chak Chan. Orbium is one of its most recognizable self-organizing lifeforms: a small computational organism whose motion and persistence emerge from local update rules.
+              Lenia is a continuous cellular automaton for artificial life, developed by Bert Wang-Chak Chan. <em>Orbium</em> is one of its most recognizable self-organizing lifeforms: a small computational organism whose motion and persistence emerge from local update rules.
             </p>
           </div>
 
@@ -499,7 +555,7 @@
                 <img src="raven_carrigg_artificial_life_lenia_orbium.webp" alt="Lenia Orbium artificial life visualization by Raven Carrigg." />
               </video>
               <figcaption>
-                <strong>Lenia Orbium.</strong>
+                <strong>Lenia <em>Orbium</em>.</strong>
                 Artificial life visualization inspired by Bert Wang-Chak Chan’s Lenia system, where local update rules produce motion, persistence, and organism-like behavior.
               </figcaption>
             </figure>
@@ -508,7 +564,7 @@
               <img src="raven_carrigg_artificial_life_lenia_orbium.webp" alt="Still image from a Lenia Orbium artificial life visualization by Raven Carrigg." />
               <figcaption>
                 <strong>Emergence as motion.</strong>
-                A still from the Orbium simulation, where continuous local interactions create form, apparent agency, and a small luminous creature of computation.
+                A still from the <em>Orbium</em> simulation, where continuous local interactions create form, apparent agency, and a small luminous creature of computation.
               </figcaption>
             </figure>
           </div>
@@ -520,6 +576,37 @@
             <p>
               <a href="https://arxiv.org/abs/1812.05433">Read the Lenia paper on arXiv</a>.
             </p>
+          </div>
+        </section>
+
+        <section class="section" id="biomechanics">
+          <div class="section-header">
+            <p class="eyebrow">Biomechanics</p>
+            <h2>Squat biomechanics study</h2>
+            <p>
+              This undergraduate research study analyzed squat movement through biomechanics, video tracking, and quantitative modeling, connecting body mechanics with force, alignment, motion, and measurement.
+            </p>
+          </div>
+
+          <div class="research-card">
+            <img
+              src="https://drive.google.com/thumbnail?id=1Yws0QclnytryXfDWnWTm8o0QyOfLfcNT&sz=w1200"
+              alt="Preview image for Raven Carrigg's squat biomechanics research study."
+            />
+
+            <div class="research-copy">
+              <h3>Squat biomechanics and movement analysis</h3>
+              <p>
+                This project reflects Raven’s early work with applied mathematics, embodied systems, measurement, and physical modeling.
+              </p>
+              <p>
+                The study sits between research and lived motion: a small archive of how bodies, forces, angles, and visual data can become part of a broader systems practice.
+              </p>
+
+              <div class="buttons">
+                <a class="button" href="https://drive.google.com/file/d/1Yws0QclnytryXfDWnWTm8o0QyOfLfcNT/view?usp=share_link">View Study</a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -620,6 +707,37 @@
           </div>
         </section>
 
+        <section class="section" id="thesis">
+          <div class="section-header">
+            <p class="eyebrow">Undergraduate thesis</p>
+            <h2>Turbulence, transport, and environmental physics</h2>
+            <p>
+              Raven’s undergraduate thesis explored turbulent transport, environmental physics, and the movement of energy through complex physical systems.
+            </p>
+          </div>
+
+          <div class="research-card">
+            <img
+              src="https://drive.google.com/thumbnail?id=1uy01g5dWOqKJGPJX_803aHM1TXsPRflq&sz=w1200"
+              alt="Preview image for Raven Carrigg's undergraduate thesis."
+            />
+
+            <div class="research-copy">
+              <h3>Undergraduate thesis</h3>
+              <p>
+                This thesis connects Raven’s background in mathematics, environmental systems, physics, and complex transport processes.
+              </p>
+              <p>
+                It also forms an early anchor for the questions that continue through this page: how motion, turbulence, pattern, and change become visible through mathematical structure.
+              </p>
+
+              <div class="buttons">
+                <a class="button" href="https://drive.google.com/file/d/1uy01g5dWOqKJGPJX_803aHM1TXsPRflq/view?usp=share_link">View Thesis</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="section" id="landsat">
           <div class="section-header">
             <p class="eyebrow">Remote sensing</p>
@@ -695,23 +813,21 @@
           </div>
         </section>
 
-        <section class="section" id="throughline">
-          <div class="section-header">
-            <p class="eyebrow">Throughline</p>
-            <h2>Language, number, pattern</h2>
-            <p>
-              These projects sit beside Raven’s poetry and peer support work as part of the same underlying practice: listening for structure in complexity without forcing it into a single story.
-            </p>
-          </div>
+        <section class="throughline-simple" id="throughline">
+          <p class="eyebrow">Throughline</p>
+          <h2>Language, number, pattern</h2>
 
-          <div class="note">
-            <p>
-              Computational systems, poems, maps, simulations, and lived-experience work all ask related questions: What forms appear under pressure? How does change become visible? What patterns persist, break, recur, or transform?
-            </p>
-            <p>
-              For Raven, mathematics and poetry are neighboring forms of abstraction: different ways of shaping attention, tracing emergence, and making meaning at the edge of chaos.
-            </p>
-          </div>
+          <p>
+            These projects sit beside Raven’s poetry and peer support work as part of the same underlying practice: listening for structure in complexity without forcing it into a single story.
+          </p>
+
+          <p>
+            Computational systems, poems, maps, simulations, and lived-experience work all ask related questions: What forms appear under pressure? How does change become visible? What patterns persist, break, recur, or transform?
+          </p>
+
+          <p>
+            For Raven, mathematics and poetry are neighboring forms of abstraction: different ways of shaping attention, tracing emergence, and making meaning at the edge of chaos.
+          </p>
         </section>
 
         <footer>
