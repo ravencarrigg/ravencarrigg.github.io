@@ -309,6 +309,20 @@
       grid-template-columns: repeat(3, 1fr);
     }
 
+    .project-grid.equal-cards {
+      align-items: stretch;
+    }
+
+    .project-grid.equal-cards .project-item {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-grid.equal-cards .project-item figcaption {
+      flex: 1;
+    }
+
     .project-item {
       margin: 0;
       overflow: hidden;
@@ -330,6 +344,12 @@
     .project-item.video-contain video {
       object-fit: contain;
       background: #0f172a;
+    }
+
+    .project-item.media-contain img,
+    .project-item.media-contain video {
+      object-fit: contain;
+      background: #f8fafc;
     }
 
     .project-item figcaption {
@@ -621,8 +641,8 @@
             </p>
           </div>
         
-          <div class="project-grid">
-            <figure class="project-item">
+          <div class="project-grid equal-cards">
+            <figure class="project-item media-contain">
               <video autoplay muted loop playsinline poster="raven_carrigg_integrate_fire_group_dynamics.webp">
                 <source src="raven_carrigg_integrate_fire_group_dynamics.webm" type="video/webm">
                 <source src="raven_carrigg_integrate_fire_group_dynamics.mp4" type="video/mp4">
@@ -630,15 +650,15 @@
               </video>
               <figcaption>
                 <strong>Integrate-and-fire group dynamics model.</strong>
-                A simulation of activation, inhibition, directional influence, and emergent behavioral patterns in a network of sentiment-derived signals.
+                A simulation of activation, inhibition, directional influence, and threshold-driven firing in a network of sentiment-derived signals.
               </figcaption>
             </figure>
 
-            <figure class="project-item">
+            <figure class="project-item media-contain">
               <img src="raven_carrigg_granger_causality_group_dynamics.webp" alt="Granger causality analysis plot showing significant directional sentiment dyads and lag structure used to inform an exploratory group dynamics model." />
               <figcaption>
                 <strong>Granger causality analysis.</strong>
-                Significant sentiment dyads, lag structure, and relative influence patterns were used to inform network connections, timing, and firing thresholds in the exploratory simulation.
+                Significant sentiment dyads, lag structure, and relative influence patterns were used to inform network connections, timing, and firing thresholds.
               </figcaption>
             </figure>
           </div>
