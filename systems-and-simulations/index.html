@@ -340,25 +340,6 @@
       color: #1f2937;
     }
 
-    .project-item.wide {
-      grid-column: 1 / -1;
-    }
-
-    .ucayali-media {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: #0f172a;
-      overflow: hidden;
-    }
-
-    .ucayali-media video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      background: #0f172a;
-    }
-
     .research-card {
       display: grid;
       grid-template-columns: minmax(210px, 320px) 1fr;
@@ -407,17 +388,6 @@
 
     .note p {
       margin: 0.45rem 0;
-    }
-
-    .throughline-simple {
-      margin-top: 3rem;
-      max-width: 850px;
-      color: #1f2937;
-      font-size: 1.08rem;
-    }
-
-    .throughline-simple p {
-      margin: 0.85rem 0;
     }
 
     footer {
@@ -609,6 +579,68 @@
           </div>
         </section>
 
+        <section class="section" id="landsat">
+          <div class="section-header">
+            <p class="eyebrow">Remote sensing</p>
+            <h2>LANDSAT time series</h2>
+            <p>
+              These animations use LANDSAT imagery visualized through Sentinel Hub to show environmental and spatial change across decades: glacial retreat, vegetation recovery, urban expansion, agricultural mosaics, and changing water boundaries.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <figure class="project-item video-contain">
+              <video autoplay muted loop playsinline poster="raven_carrigg_landsat_sentinelhub_bear_glacier.webp">
+                <source src="raven_carrigg_landsat_sentinelhub_bear_glacier.webm" type="video/webm">
+                <source src="raven_carrigg_landsat_sentinelhub_bear_glacier.mp4" type="video/mp4">
+              </video>
+              <figcaption>
+                <strong>Bear Glacier, Alaska.</strong>
+                LANDSAT time series showing glacial retreat, ice movement, coastal change, and shifting boundaries between ice, water, and land.
+              </figcaption>
+            </figure>
+
+            <figure class="project-item video-contain">
+              <video autoplay muted loop playsinline>
+                <source src="raven_carrigg_landsat_sentinelhub_bozeman.webm" type="video/webm">
+                <source src="raven_carrigg_landsat_sentinelhub_bozeman.mp4" type="video/mp4">
+              </video>
+              <figcaption>
+                <strong>Bozeman, Montana.</strong>
+                LANDSAT time series showing urban expansion, agricultural mosaics, vegetation change, and mountain-valley spatial structure.
+              </figcaption>
+            </figure>
+
+            <figure class="project-item video-contain">
+              <video autoplay muted loop playsinline>
+                <source src="raven_carrigg_landsat_sentinelhub_saint_helens.webm" type="video/webm">
+                <source src="raven_carrigg_landsat_sentinelhub_saint_helens.mp4" type="video/mp4">
+              </video>
+              <figcaption>
+                <strong>Mount St. Helens, Washington.</strong>
+                NDVI LANDSAT time series showing eruption-scar contrast, vegetation recovery, long-term regrowth, and landscape reorganization.
+              </figcaption>
+            </figure>
+
+            <figure class="project-item video-contain">
+              <video autoplay muted loop playsinline>
+                <source src="raven_carrigg_landsat_sentinelhub_lake_mead.webm" type="video/webm">
+                <source src="raven_carrigg_landsat_sentinelhub_lake_mead.mp4" type="video/mp4">
+              </video>
+              <figcaption>
+                <strong>Las Vegas and Lake Mead, Nevada.</strong>
+                LANDSAT time series showing urban growth, desert development, shifting water boundaries, and long-term Lake Mead change.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="note">
+            <p>
+              These time series are intended as visual explorations of landscape change rather than formal remote-sensing classifications. Some use vegetation or water-sensitive spectral treatments; where the exact index is uncertain, captions describe the visible process rather than assigning a specific index label.
+            </p>
+          </div>
+        </section>
+
         <section class="section" id="cyclic-cellular-automata">
           <div class="section-header">
             <p class="eyebrow">Cellular automata</p>
@@ -735,98 +767,6 @@
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="section" id="landsat">
-          <div class="section-header">
-            <p class="eyebrow">Remote sensing</p>
-            <h2>LANDSAT time series</h2>
-            <p>
-              These animations use LANDSAT imagery visualized through Sentinel Hub to show environmental and spatial change across decades: glacial retreat, vegetation recovery, river migration, urban expansion, agricultural mosaics, and changing water boundaries.
-            </p>
-          </div>
-
-          <div class="project-grid">
-            <figure class="project-item video-contain">
-              <video autoplay muted loop playsinline poster="raven_carrigg_landsat_sentinelhub_bear_glacier.webp">
-                <source src="raven_carrigg_landsat_sentinelhub_bear_glacier.webm" type="video/webm">
-                <source src="raven_carrigg_landsat_sentinelhub_bear_glacier.mp4" type="video/mp4">
-              </video>
-              <figcaption>
-                <strong>Bear Glacier, Alaska.</strong>
-                LANDSAT time series showing glacial retreat, ice movement, coastal change, and shifting boundaries between ice, water, and land.
-              </figcaption>
-            </figure>
-
-            <figure class="project-item video-contain">
-              <video autoplay muted loop playsinline>
-                <source src="raven_carrigg_landsat_sentinelhub_bozeman.webm" type="video/webm">
-                <source src="raven_carrigg_landsat_sentinelhub_bozeman.mp4" type="video/mp4">
-              </video>
-              <figcaption>
-                <strong>Bozeman, Montana.</strong>
-                LANDSAT time series showing urban expansion, agricultural mosaics, vegetation change, and mountain-valley spatial structure.
-              </figcaption>
-            </figure>
-
-            <figure class="project-item video-contain">
-              <video autoplay muted loop playsinline>
-                <source src="raven_carrigg_landsat_sentinelhub_saint_helens.webm" type="video/webm">
-                <source src="raven_carrigg_landsat_sentinelhub_saint_helens.mp4" type="video/mp4">
-              </video>
-              <figcaption>
-                <strong>Mount St. Helens, Washington.</strong>
-                NDVI LANDSAT time series showing eruption-scar contrast, vegetation recovery, long-term regrowth, and landscape reorganization.
-              </figcaption>
-            </figure>
-
-            <figure class="project-item video-contain">
-              <video autoplay muted loop playsinline>
-                <source src="raven_carrigg_landsat_sentinelhub_lake_mead.webm" type="video/webm">
-                <source src="raven_carrigg_landsat_sentinelhub_lake_mead.mp4" type="video/mp4">
-              </video>
-              <figcaption>
-                <strong>Las Vegas and Lake Mead, Nevada.</strong>
-                LANDSAT time series showing urban growth, desert development, shifting water boundaries, and long-term Lake Mead change.
-              </figcaption>
-            </figure>
-
-            <figure class="project-item wide">
-              <div class="ucayali-media">
-                <video autoplay muted loop playsinline>
-                  <source src="raven_carrigg_landsat_sentinelhub_ucayali_river.webm" type="video/webm">
-                  <source src="raven_carrigg_landsat_sentinelhub_ucayali_river.mp4" type="video/mp4">
-                </video>
-              </div>
-              <figcaption>
-                <strong>Ucayali River, Peru.</strong>
-                LANDSAT time series showing river meander migration, floodplain change, oxbow formation, and shifting water-land boundaries across time.
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="note">
-            <p>
-              These time series are intended as visual explorations of landscape change rather than formal remote-sensing classifications. Some use vegetation or water-sensitive spectral treatments; where the exact index is uncertain, captions describe the visible process rather than assigning a specific index label.
-            </p>
-          </div>
-        </section>
-
-        <section class="throughline-simple" id="throughline">
-          <p class="eyebrow">Throughline</p>
-          <h2>Language, number, pattern</h2>
-
-          <p>
-            These projects sit beside Raven’s poetry and peer support work as part of the same underlying practice: listening for structure in complexity without forcing it into a single story.
-          </p>
-
-          <p>
-            Computational systems, poems, maps, simulations, and lived-experience work all ask related questions: What forms appear under pressure? How does change become visible? What patterns persist, break, recur, or transform?
-          </p>
-
-          <p>
-            For Raven, mathematics and poetry are neighboring forms of abstraction: different ways of shaping attention, tracing emergence, and making meaning at the edge of chaos.
-          </p>
         </section>
 
         <footer>
