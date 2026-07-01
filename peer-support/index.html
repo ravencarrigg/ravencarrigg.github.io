@@ -17,12 +17,12 @@
   <meta property="og:description" content="A values-centered page about Raven Indigo Carrigg's peer support philosophy, grounded in lived experience, recovery, harm reduction, cultural humility, dignity, voice and choice, autonomy, and self-determination." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ravencarrigg.github.io/peer-support/" />
-  <meta property="og:image" content="https://ravencarrigg.github.io/peer-support/raven_carrigg_peer_support_portrait.webp" />
+  <meta property="og:image" content="https://ravencarrigg.github.io/peer-support/raven_carrigg_receiving_energy.webp" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Peer Support | Raven Indigo Carrigg" />
   <meta name="twitter:description" content="A values-centered page about peer support, lived experience, recovery, dignity, voice and choice, autonomy, and self-determination." />
-  <meta name="twitter:image" content="https://ravencarrigg.github.io/peer-support/raven_carrigg_peer_support_portrait.webp" />
+  <meta name="twitter:image" content="https://ravencarrigg.github.io/peer-support/raven_carrigg_receiving_energy.webp" />
 
   <script type="application/ld+json">
   {
@@ -34,7 +34,7 @@
     "alternateName": "Raven Carrigg Peer Support Values",
     "description": "Peer Support is a values-centered page by Raven Indigo Carrigg about lived experience, recovery, harm reduction, cultural humility, voice and choice, autonomy, dignity, and self-determination.",
     "inLanguage": "en",
-    "image": "https://ravencarrigg.github.io/peer-support/raven_carrigg_peer_support_portrait.webp",
+    "image": "https://ravencarrigg.github.io/peer-support/raven_carrigg_receiving_energy.webp",
     "mainEntity": {
       "@type": "Person",
       "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg",
@@ -172,16 +172,23 @@
         linear-gradient(135deg, rgba(224, 231, 255, 0.9), rgba(255, 255, 255, 0.74));
     }
 
-    .hero-image {
+    .hero-image-wrap {
       width: min(100%, 270px);
       aspect-ratio: 1 / 1;
-      object-fit: cover;
-      display: block;
+      overflow: hidden;
       border-radius: 34px;
       box-shadow:
         0 22px 52px rgba(15, 23, 42, 0.22),
         0 0 0 1px rgba(255, 255, 255, 0.9);
       background: #dbeafe;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
 
     .eyebrow {
@@ -360,6 +367,10 @@
       background: #dbeafe;
     }
 
+    .support-image.portrait {
+      object-position: center;
+    }
+
     .image-caption {
       margin: 0.7rem 0 0;
       color: var(--soft);
@@ -460,7 +471,7 @@
         grid-template-columns: 1fr;
       }
 
-      .hero-image,
+      .hero-image-wrap,
       .support-image {
         max-width: 420px;
       }
@@ -510,14 +521,14 @@
   <main>
     <article class="card">
       <header class="hero">
-        <img
-          class="hero-image"
-          src="raven_carrigg_peer_support_portrait.webp"
-          alt="Portrait of Raven Indigo Carrigg with a dog, representing warmth, presence, and lived-experience peer support."
-          width="900"
-          height="900"
-          fetchpriority="high"
-        />
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="raven_carrigg_receiving_energy.webp"
+            alt="Silhouette of Raven Indigo Carrigg standing at the ocean with arms open beneath a dramatic sky."
+            fetchpriority="high"
+          />
+        </div>
 
         <div>
           <p class="eyebrow">Lived experience · Recovery · Peer values</p>
@@ -578,12 +589,12 @@
           <div class="split-section">
             <div>
               <img
-                class="support-image"
-                src="raven_carrigg_receiving_energy.webp"
-                alt="Silhouette of Raven Indigo Carrigg standing at the ocean with arms open beneath a dramatic sky."
+                class="support-image portrait"
+                src="raven_carrigg_peer_support_portrait.webp"
+                alt="Portrait of Raven Indigo Carrigg with a dog, representing warmth, presence, and lived-experience peer support."
               />
               <p class="image-caption">
-                Recovery is not a straight line out of crisis. Sometimes it is a shoreline: return, rupture, tide, breath.
+                Peer support begins with presence: one person meeting another without reducing them to a problem to solve.
               </p>
             </div>
 
