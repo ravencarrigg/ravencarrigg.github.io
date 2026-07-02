@@ -27,44 +27,136 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Book",
-    "@id": "https://ravencarrigg.github.io/liminal-afterhood/#book",
-    "name": "Liminal Afterhood: Fragments from the Edge of Survival",
-    "alternateName": "Liminal Afterhood",
-    "url": "https://ravencarrigg.github.io/liminal-afterhood/",
-    "image": "https://ravencarrigg.github.io/liminal-afterhood/raven_carrigg_liminal_afterhood_cover.webp",
-    "description": "Liminal Afterhood: Fragments from the Edge of Survival is an experimental poetry collection and trauma-survival archive by Raven Indigo Carrigg exploring suicide survival, trauma memory, queer and trans identity, rupture, nonlinear recovery, and self-reclamation through lyric poetry, free verse, archival fragments, field notes, and computationally recombined language.",
-    "inLanguage": "en",
-    "datePublished": "2026-06-21",
-    "genre": [
-      "Experimental poetry",
-      "Trauma-survival writing",
-      "Queer poetry",
-      "Trans poetry",
-      "Computational poetics",
-      "Lived-experience storytelling"
-    ],
-    "bookFormat": [
-      "https://schema.org/Paperback",
-      "https://schema.org/Hardcover",
-      "https://schema.org/EBook"
-    ],
-    "author": {
-      "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
-    },
-    "publisher": {
-      "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
-    },
-    "isAccessibleForFree": false,
-    "workExample": {
-      "@type": "CreativeWork",
-      "name": "Selected excerpt from Liminal Afterhood: Fragments from the Edge of Survival",
-      "url": "https://drive.google.com/file/d/14UH0KKnggybA2Bj8Hc99tWaSwoXE9n6a/view?usp=share_link"
-    },
-    "sameAs": [
-      "https://www.amazon.com/Liminal-Afterhood-Fragments-Edge-Survival/dp/B0H617S5LQ",
-      "https://www.amazon.com/Liminal-Afterhood-Fragments-Edge-Survival/dp/B0H63C33Y8",
-      "https://www.amazon.com/Liminal-Afterhood-Fragments-Edge-Survival-ebook/dp/B0H6K8XLJ4"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ravencarrigg.github.io/#website",
+        "url": "https://ravencarrigg.github.io/",
+        "name": "Raven Indigo Carrigg",
+        "alternateName": "Raven Carrigg",
+        "description": "Personal website and creative archive for Raven Indigo Carrigg, also known publicly as Raven Carrigg.",
+        "publisher": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "@id": "https://ravencarrigg.github.io/#site-navigation",
+        "name": [
+          "Home",
+          "Liminal Afterhood",
+          "Systems and Simulations",
+          "Raven's Peer Values"
+        ],
+        "url": [
+          "https://ravencarrigg.github.io/",
+          "https://ravencarrigg.github.io/liminal-afterhood/",
+          "https://ravencarrigg.github.io/systems-and-simulations/",
+          "https://ravencarrigg.github.io/peer-values/"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://ravencarrigg.github.io/liminal-afterhood/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ravencarrigg.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Liminal Afterhood",
+            "item": "https://ravencarrigg.github.io/liminal-afterhood/"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg",
+        "name": "Raven Indigo Carrigg",
+        "alternateName": [
+          "Raven Carrigg"
+        ],
+        "givenName": "Raven",
+        "additionalName": "Indigo",
+        "familyName": "Carrigg",
+        "pronouns": "they/them",
+        "gender": "Nonbinary",
+        "description": "Raven Indigo Carrigg is a queer poet, systems thinker, computational artist, creative coder, computational modeler, and peer support specialist based in Portland, Oregon.",
+        "url": "https://ravencarrigg.github.io/",
+        "image": "https://ravencarrigg.github.io/raven_carrigg_avatar.webp",
+        "sameAs": [
+          "https://github.com/ravencarrigg",
+          "https://amazon.com/author/ravencarrigg",
+          "https://www.linkedin.com/in/raven-carrigg",
+          "https://www.youtube.com/@ravencarrigg411"
+        ],
+        "jobTitle": [
+          "Poet",
+          "Author",
+          "Systems Thinker",
+          "Computational Artist",
+          "Creative Coder",
+          "Computational Modeler",
+          "Peer Support Specialist",
+          "Systems Navigator"
+        ]
+      },
+      {
+        "@type": "Book",
+        "@id": "https://ravencarrigg.github.io/liminal-afterhood/#book",
+        "name": "Liminal Afterhood: Fragments from the Edge of Survival",
+        "alternateName": "Liminal Afterhood",
+        "url": "https://ravencarrigg.github.io/liminal-afterhood/",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://ravencarrigg.github.io/liminal-afterhood/"
+        },
+        "isPartOf": {
+          "@id": "https://ravencarrigg.github.io/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://ravencarrigg.github.io/liminal-afterhood/#breadcrumb"
+        },
+        "image": "https://ravencarrigg.github.io/liminal-afterhood/raven_carrigg_liminal_afterhood_cover.webp",
+        "description": "Liminal Afterhood: Fragments from the Edge of Survival is an experimental poetry collection and trauma-survival archive by Raven Indigo Carrigg exploring suicide survival, trauma memory, queer and trans identity, rupture, nonlinear recovery, and self-reclamation through lyric poetry, free verse, archival fragments, field notes, and computationally recombined language.",
+        "inLanguage": "en",
+        "datePublished": "2026-06-21",
+        "genre": [
+          "Experimental poetry",
+          "Trauma-survival writing",
+          "Queer poetry",
+          "Trans poetry",
+          "Computational poetics",
+          "Lived-experience storytelling"
+        ],
+        "bookFormat": [
+          "https://schema.org/Paperback",
+          "https://schema.org/Hardcover",
+          "https://schema.org/EBook"
+        ],
+        "author": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        },
+        "publisher": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        },
+        "isAccessibleForFree": false,
+        "workExample": {
+          "@type": "CreativeWork",
+          "name": "Selected excerpt from Liminal Afterhood: Fragments from the Edge of Survival",
+          "url": "https://drive.google.com/file/d/14UH0KKnggybA2Bj8Hc99tWaSwoXE9n6a/view?usp=share_link"
+        },
+        "sameAs": [
+          "https://www.amazon.com/Liminal-Afterhood-Fragments-Edge-Survival/dp/B0H617S5LQ",
+          "https://www.amazon.com/Liminal-Afterhood-Fragments-Edge-Survival/dp/B0H63C33Y8",
+          "https://www.amazon.com/Liminal-Afterhood-Fragments-Edge-Survival-ebook/dp/B0H6K8XLJ4"
+        ]
+      }
     ]
   }
   </script>
@@ -129,6 +221,61 @@
       overflow: hidden;
     }
 
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem 1.2rem;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .site-nav-title {
+      color: var(--indigo);
+      font-weight: 850;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .site-nav-title:hover {
+      color: var(--blue-dark);
+    }
+
+    .site-nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+    }
+
+    .site-nav-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.2rem;
+      padding: 0.45rem 0.72rem;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .site-nav-links a:hover {
+      background: #f8fafc;
+      border-color: var(--line);
+      color: var(--blue);
+    }
+
+    .site-nav-links a[aria-current="page"] {
+      background: var(--lavender);
+      color: var(--indigo);
+      border-color: rgba(49, 46, 129, 0.12);
+    }
+
     .hero {
       display: grid;
       grid-template-columns: minmax(210px, 310px) 1fr;
@@ -186,6 +333,28 @@
 
     .content {
       padding: 3rem;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+      margin: 0 0 1.6rem;
+      color: var(--soft);
+      font-size: 0.92rem;
+      font-weight: 650;
+    }
+
+    .breadcrumbs a {
+      color: var(--blue-dark);
+      text-decoration: none;
+    }
+
+    .breadcrumbs a:hover {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
     }
 
     .intro {
@@ -318,6 +487,19 @@
         padding: 0.5rem 0;
       }
 
+      .site-nav {
+        padding: 0.9rem 1rem;
+      }
+
+      .site-nav-links {
+        width: 100%;
+      }
+
+      .site-nav-links a {
+        font-size: 0.86rem;
+        padding: 0.42rem 0.62rem;
+      }
+
       .hero {
         padding: 2rem;
         gap: 1.4rem;
@@ -348,6 +530,17 @@
 <body>
   <main>
     <article class="card">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-nav-title" href="https://ravencarrigg.github.io/">Raven Indigo Carrigg</a>
+
+        <div class="site-nav-links">
+          <a href="https://ravencarrigg.github.io/">Home</a>
+          <a href="https://ravencarrigg.github.io/liminal-afterhood/" aria-current="page">Liminal Afterhood</a>
+          <a href="https://ravencarrigg.github.io/systems-and-simulations/">Systems and Simulations</a>
+          <a href="https://ravencarrigg.github.io/peer-values/">Raven's Peer Values</a>
+        </div>
+      </nav>
+
       <header class="hero">
         <div>
           <img
@@ -379,6 +572,12 @@
       </header>
 
       <div class="content">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="https://ravencarrigg.github.io/">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Liminal Afterhood</span>
+        </nav>
+
         <section class="intro">
           <p>
             <em>Liminal Afterhood: Fragments from the Edge of Survival</em> is an experimental poetry collection and trauma-survival archive by Raven Indigo Carrigg.
