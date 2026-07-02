@@ -27,133 +27,196 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "@id": "https://ravencarrigg.github.io/peer-values/#peer-values",
-    "url": "https://ravencarrigg.github.io/peer-values/",
-    "name": "Raven's Peer Values",
-    "alternateName": [
-      "Peer Values",
-      "Raven Carrigg Peer Values",
-      "Raven Indigo Carrigg Peer Values"
-    ],
-    "description": "Raven's Peer Values is a values-centered page by Raven Indigo Carrigg about peer support, lived experience, recovery, voice and choice, dignity, agency, self-determination, harm reduction, cultural humility, practical support, systems navigation, community connection, and meaning-making.",
-    "inLanguage": "en",
-    "image": "https://ravencarrigg.github.io/peer-values/raven_carrigg_receiving_energy.webp",
-    "associatedMedia": [
+    "@graph": [
       {
-        "@type": "ImageObject",
-        "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_peer_support_portrait.webp",
-        "caption": "Portrait of Raven Indigo Carrigg."
+        "@type": "WebSite",
+        "@id": "https://ravencarrigg.github.io/#website",
+        "url": "https://ravencarrigg.github.io/",
+        "name": "Raven Indigo Carrigg",
+        "alternateName": "Raven Carrigg",
+        "description": "Personal website and creative archive for Raven Indigo Carrigg, also known publicly as Raven Carrigg.",
+        "publisher": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        },
+        "inLanguage": "en"
       },
       {
-        "@type": "ImageObject",
-        "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_receiving_energy.webp",
-        "caption": "Recovery and lived-experience peer values image."
+        "@type": "SiteNavigationElement",
+        "@id": "https://ravencarrigg.github.io/#site-navigation",
+        "name": [
+          "Home",
+          "Liminal Afterhood",
+          "Systems and Simulations",
+          "Raven's Peer Values"
+        ],
+        "url": [
+          "https://ravencarrigg.github.io/",
+          "https://ravencarrigg.github.io/liminal-afterhood/",
+          "https://ravencarrigg.github.io/systems-and-simulations/",
+          "https://ravencarrigg.github.io/peer-values/"
+        ]
       },
       {
-        "@type": "ImageObject",
-        "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_kahlo_mural_goteborg.webp",
-        "caption": "Frida Kahlo mural image representing endurance, voice, dignity, and survival."
+        "@type": "BreadcrumbList",
+        "@id": "https://ravencarrigg.github.io/peer-values/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ravencarrigg.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Raven's Peer Values",
+            "item": "https://ravencarrigg.github.io/peer-values/"
+          }
+        ]
       },
       {
-        "@type": "ImageObject",
-        "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_incense_mosaic.webp",
-        "caption": "Incense mosaic image representing recovery, reflection, and meaning-making."
+        "@type": "Person",
+        "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg",
+        "name": "Raven Indigo Carrigg",
+        "alternateName": [
+          "Raven Carrigg"
+        ],
+        "givenName": "Raven",
+        "additionalName": "Indigo",
+        "familyName": "Carrigg",
+        "pronouns": "they/them",
+        "gender": "Nonbinary",
+        "description": "Raven Indigo Carrigg is a queer poet, systems thinker, computational artist, creative coder, computational modeler, peer support specialist, and systems navigator based in Portland, Oregon.",
+        "url": "https://ravencarrigg.github.io/",
+        "image": "https://ravencarrigg.github.io/peer-values/raven_carrigg_peer_support_portrait.webp",
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Portland, Oregon"
+        },
+        "jobTitle": [
+          "Peer Support Specialist",
+          "Systems Navigator",
+          "Poet",
+          "Systems Thinker",
+          "Author",
+          "Creative Coder"
+        ],
+        "knowsAbout": [
+          "Peer support",
+          "Peer values",
+          "Mental health recovery",
+          "Lived experience",
+          "Harm reduction",
+          "Cultural humility",
+          "Voice and choice",
+          "Agency",
+          "Self-determination",
+          "Trauma-informed practice",
+          "Systems navigation",
+          "Practical support",
+          "Community connection",
+          "Queer and trans peer support",
+          "Neurodivergence",
+          "Crisis support",
+          "Recovery and resiliency",
+          "Nonlinear recovery",
+          "Cyclical recovery",
+          "Mental health advocacy",
+          "Housing instability",
+          "Healthcare systems",
+          "Legal and bureaucratic systems",
+          "Meaning-making",
+          "Possibility",
+          "Complex systems",
+          "Language and meaning",
+          "Systems thinking"
+        ],
+        "sameAs": [
+          "https://github.com/ravencarrigg",
+          "https://amazon.com/author/ravencarrigg",
+          "https://www.linkedin.com/in/raven-carrigg",
+          "https://www.youtube.com/@ravencarrigg411"
+        ]
       },
       {
-        "@type": "ImageObject",
-        "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_oil_fractal.webp",
-        "caption": "Oil fractal image representing complexity, context, and changing conditions."
+        "@type": "ProfilePage",
+        "@id": "https://ravencarrigg.github.io/peer-values/#peer-values",
+        "url": "https://ravencarrigg.github.io/peer-values/",
+        "name": "Raven's Peer Values",
+        "alternateName": [
+          "Peer Values",
+          "Raven Carrigg Peer Values",
+          "Raven Indigo Carrigg Peer Values"
+        ],
+        "description": "Raven's Peer Values is a values-centered page by Raven Indigo Carrigg about peer support, lived experience, recovery, voice and choice, dignity, agency, self-determination, harm reduction, cultural humility, practical support, systems navigation, community connection, and meaning-making.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://ravencarrigg.github.io/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://ravencarrigg.github.io/peer-values/#breadcrumb"
+        },
+        "image": "https://ravencarrigg.github.io/peer-values/raven_carrigg_receiving_energy.webp",
+        "mainEntity": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        },
+        "associatedMedia": [
+          {
+            "@type": "ImageObject",
+            "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_peer_support_portrait.webp",
+            "caption": "Portrait of Raven Indigo Carrigg."
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_receiving_energy.webp",
+            "caption": "Recovery and lived-experience peer values image."
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_kahlo_mural_goteborg.webp",
+            "caption": "Frida Kahlo mural image representing endurance, voice, dignity, and survival."
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_incense_mosaic.webp",
+            "caption": "Incense mosaic image representing recovery, reflection, and meaning-making."
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_oil_fractal.webp",
+            "caption": "Oil fractal image representing complexity, context, and changing conditions."
+          }
+        ],
+        "about": [
+          "Peer support",
+          "Peer values",
+          "Mental health recovery",
+          "Lived experience",
+          "Harm reduction",
+          "Cultural humility",
+          "Voice and choice",
+          "Agency",
+          "Autonomy",
+          "Self-determination",
+          "Dignity",
+          "Trauma-informed practice",
+          "Recovery",
+          "Queer and trans community",
+          "Neurodivergence",
+          "Systems navigation",
+          "Community connection",
+          "Mental health challenges",
+          "Crisis support",
+          "Housing instability",
+          "Healthcare systems",
+          "Legal and bureaucratic processes",
+          "Meaning-making",
+          "Possibility",
+          "Language and meaning",
+          "Complex systems",
+          "Practical support"
+        ]
       }
-    ],
-    "mainEntity": {
-      "@type": "Person",
-      "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg",
-      "name": "Raven Indigo Carrigg",
-      "alternateName": [
-        "Raven Carrigg"
-      ],
-      "url": "https://ravencarrigg.github.io/",
-      "image": "https://ravencarrigg.github.io/peer-values/raven_carrigg_peer_support_portrait.webp",
-      "pronouns": "they/them",
-      "gender": "Nonbinary",
-      "homeLocation": {
-        "@type": "Place",
-        "name": "Portland, Oregon"
-      },
-      "jobTitle": [
-        "Peer Support Specialist",
-        "Systems Navigator",
-        "Poet",
-        "Systems Thinker",
-        "Author",
-        "Creative Coder"
-      ],
-      "knowsAbout": [
-        "Peer support",
-        "Peer values",
-        "Mental health recovery",
-        "Lived experience",
-        "Harm reduction",
-        "Cultural humility",
-        "Voice and choice",
-        "Agency",
-        "Self-determination",
-        "Trauma-informed practice",
-        "Systems navigation",
-        "Practical support",
-        "Community connection",
-        "Queer and trans peer support",
-        "Neurodivergence",
-        "Crisis support",
-        "Recovery and resiliency",
-        "Nonlinear recovery",
-        "Cyclical recovery",
-        "Mental health advocacy",
-        "Housing instability",
-        "Healthcare systems",
-        "Legal and bureaucratic systems",
-        "Meaning-making",
-        "Possibility",
-        "Complex systems",
-        "Language and meaning",
-        "Systems thinking"
-      ],
-      "sameAs": [
-        "https://github.com/ravencarrigg",
-        "https://amazon.com/author/ravencarrigg",
-        "https://www.linkedin.com/in/raven-carrigg",
-        "https://www.youtube.com/@ravencarrigg411"
-      ]
-    },
-    "about": [
-      "Peer support",
-      "Peer values",
-      "Mental health recovery",
-      "Lived experience",
-      "Harm reduction",
-      "Cultural humility",
-      "Voice and choice",
-      "Agency",
-      "Autonomy",
-      "Self-determination",
-      "Dignity",
-      "Trauma-informed practice",
-      "Recovery",
-      "Queer and trans community",
-      "Neurodivergence",
-      "Systems navigation",
-      "Community connection",
-      "Mental health challenges",
-      "Crisis support",
-      "Housing instability",
-      "Healthcare systems",
-      "Legal and bureaucratic processes",
-      "Meaning-making",
-      "Possibility",
-      "Language and meaning",
-      "Complex systems",
-      "Practical support"
     ]
   }
   </script>
@@ -216,6 +279,61 @@
       box-shadow: var(--shadow);
       backdrop-filter: blur(18px);
       overflow: hidden;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem 1.2rem;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .site-nav-title {
+      color: var(--indigo);
+      font-weight: 850;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .site-nav-title:hover {
+      color: var(--blue-dark);
+    }
+
+    .site-nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+    }
+
+    .site-nav-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.2rem;
+      padding: 0.45rem 0.72rem;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .site-nav-links a:hover {
+      background: #f8fafc;
+      border-color: var(--line);
+      color: var(--blue);
+    }
+
+    .site-nav-links a[aria-current="page"] {
+      background: var(--lavender);
+      color: var(--indigo);
+      border-color: rgba(49, 46, 129, 0.12);
     }
 
     .hero {
@@ -320,6 +438,28 @@
 
     .content {
       padding: 3rem;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+      margin: 0 0 1.6rem;
+      color: var(--soft);
+      font-size: 0.92rem;
+      font-weight: 650;
+    }
+
+    .breadcrumbs a {
+      color: var(--blue-dark);
+      text-decoration: none;
+    }
+
+    .breadcrumbs a:hover {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
     }
 
     .intro,
@@ -469,6 +609,19 @@
         padding: 0.5rem 0;
       }
 
+      .site-nav {
+        padding: 0.9rem 1rem;
+      }
+
+      .site-nav-links {
+        width: 100%;
+      }
+
+      .site-nav-links a {
+        font-size: 0.86rem;
+        padding: 0.42rem 0.62rem;
+      }
+
       .hero {
         padding: 2rem;
         gap: 1.4rem;
@@ -504,6 +657,17 @@
 <body>
   <main>
     <article class="page-card">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-nav-title" href="https://ravencarrigg.github.io/">Raven Indigo Carrigg</a>
+
+        <div class="site-nav-links">
+          <a href="https://ravencarrigg.github.io/">Home</a>
+          <a href="https://ravencarrigg.github.io/liminal-afterhood/">Liminal Afterhood</a>
+          <a href="https://ravencarrigg.github.io/systems-and-simulations/">Systems and Simulations</a>
+          <a href="https://ravencarrigg.github.io/peer-values/" aria-current="page">Raven's Peer Values</a>
+        </div>
+      </nav>
+
       <header class="hero">
         <div class="hero-image-wrap">
           <img
@@ -532,6 +696,12 @@
       </header>
 
       <div class="content">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="https://ravencarrigg.github.io/">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Raven's Peer Values</span>
+        </nav>
+
         <section class="intro">
           <p>
             Peer support begins with the belief that people are not problems to be solved. People are whole, changing human beings whose needs, strengths, stories, boundaries, and choices deserve dignity.
