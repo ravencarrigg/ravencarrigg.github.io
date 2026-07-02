@@ -372,22 +372,19 @@
     .fractal-frame {
       width: min(100%, 320px);
       margin: 0 auto;
-      aspect-ratio: 3 / 4;
-      overflow: hidden;
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.9);
       box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
       background: #dbeafe;
+      overflow: hidden;
     }
-
+    
     .fractal-frame img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      object-fit: contain;
       object-position: center;
       display: block;
-      transform: rotate(90deg) scale(1.34);
-      transform-origin: center;
     }
 
     h2 {
