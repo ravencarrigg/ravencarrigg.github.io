@@ -1,6 +1,6 @@
 # Raven Indigo Carrigg
 
-This repository hosts the personal website and creative archive of Raven Indigo Carrigg, also known publicly as Raven Carrigg: a queer poet, systems thinker, computational artist, creative coder, computational modeler, and peer support specialist based in Portland, Oregon.
+This repository hosts the personal website and creative archive of Raven Indigo Carrigg, also known publicly as Raven Carrigg. Based in Portland, Oregon, Raven works across poetry, computational art, creative coding, systems thinking, lived-experience practice, and peer support.
 
 The site brings together poetry, computational art, creative coding, systems thinking, trauma-survival writing, queer/trans poetics, lived-experience work, peer support values, and experiments with language, number, and pattern. Across these projects, Raven explores emergent forms for tracing complexity, reclaiming voice, and shaping meaning at the edge of chaos.
 
