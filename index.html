@@ -38,7 +38,34 @@
         "publisher": {
           "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
         },
-        "inLanguage": "en"
+        "inLanguage": "en",
+        "hasPart": [
+          {
+            "@id": "https://ravencarrigg.github.io/liminal-afterhood/#book"
+          },
+          {
+            "@id": "https://ravencarrigg.github.io/systems-and-simulations/#projects"
+          },
+          {
+            "@id": "https://ravencarrigg.github.io/peer-values/#peer-values"
+          }
+        ]
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "@id": "https://ravencarrigg.github.io/#site-navigation",
+        "name": [
+          "Home",
+          "Liminal Afterhood",
+          "Systems and Simulations",
+          "Raven's Peer Values"
+        ],
+        "url": [
+          "https://ravencarrigg.github.io/",
+          "https://ravencarrigg.github.io/liminal-afterhood/",
+          "https://ravencarrigg.github.io/systems-and-simulations/",
+          "https://ravencarrigg.github.io/peer-values/"
+        ]
       },
       {
         "@type": "ProfilePage",
@@ -52,7 +79,18 @@
         },
         "mainEntity": {
           "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
-        }
+        },
+        "hasPart": [
+          {
+            "@id": "https://ravencarrigg.github.io/liminal-afterhood/#book"
+          },
+          {
+            "@id": "https://ravencarrigg.github.io/systems-and-simulations/#projects"
+          },
+          {
+            "@id": "https://ravencarrigg.github.io/peer-values/#peer-values"
+          }
+        ]
       },
       {
         "@type": "Person",
@@ -138,9 +176,26 @@
         "author": {
           "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
         },
+        "isPartOf": {
+          "@id": "https://ravencarrigg.github.io/#website"
+        },
         "sameAs": [
           "https://www.amazon.com/Liminal-Afterhood-Fragments-Edge-Survival/dp/B0H617S5LQ"
         ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://ravencarrigg.github.io/systems-and-simulations/#projects",
+        "url": "https://ravencarrigg.github.io/systems-and-simulations/",
+        "name": "Systems and Simulations",
+        "alternateName": "Complex Systems Projects",
+        "description": "Systems and Simulations is a project archive by Raven Indigo Carrigg featuring computational art, artificial life, remote sensing, terrain visualization, mathematical modeling, biomechanics, and complex systems experiments.",
+        "isPartOf": {
+          "@id": "https://ravencarrigg.github.io/#website"
+        },
+        "creator": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        }
       },
       {
         "@type": "WebPage",
@@ -231,6 +286,61 @@
       box-shadow: var(--shadow);
       backdrop-filter: blur(18px);
       overflow: hidden;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem 1.2rem;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .site-nav-title {
+      color: var(--indigo);
+      font-weight: 850;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .site-nav-title:hover {
+      color: var(--blue-dark);
+    }
+
+    .site-nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+    }
+
+    .site-nav-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.2rem;
+      padding: 0.45rem 0.72rem;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .site-nav-links a:hover {
+      background: #f8fafc;
+      border-color: var(--line);
+      color: var(--blue);
+    }
+
+    .site-nav-links a[aria-current="page"] {
+      background: var(--lavender);
+      color: var(--indigo);
+      border-color: rgba(49, 46, 129, 0.12);
     }
 
     .hero {
@@ -537,6 +647,19 @@
         padding: 0.5rem 0;
       }
 
+      .site-nav {
+        padding: 0.9rem 1rem;
+      }
+
+      .site-nav-links {
+        width: 100%;
+      }
+
+      .site-nav-links a {
+        font-size: 0.86rem;
+        padding: 0.42rem 0.62rem;
+      }
+
       .hero {
         grid-template-columns: 1fr;
         padding: 2rem;
@@ -585,6 +708,17 @@
 <body>
   <main>
     <article class="card">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-nav-title" href="https://ravencarrigg.github.io/" aria-current="page">Raven Indigo Carrigg</a>
+
+        <div class="site-nav-links">
+          <a href="https://ravencarrigg.github.io/" aria-current="page">Home</a>
+          <a href="https://ravencarrigg.github.io/liminal-afterhood/">Liminal Afterhood</a>
+          <a href="https://ravencarrigg.github.io/systems-and-simulations/">Systems and Simulations</a>
+          <a href="https://ravencarrigg.github.io/peer-values/">Peer Values</a>
+        </div>
+      </nav>
+
       <header class="hero">
         <img class="avatar" src="raven_carrigg_avatar.webp" alt="Portrait image representing Raven Indigo Carrigg" />
         
@@ -636,7 +770,8 @@
           <div class="work-card">
             <h2>Peer support</h2>
             <p>
-              Lived-experience practice rooted in walking alongside rather than fixing, supporting people through crisis, stigma, transition, and systemic harm while centering dignity, voice and choice, agency, self-determination, and the right to belong without erasure.            </p>
+              Lived-experience practice rooted in walking alongside rather than fixing, supporting people through crisis, stigma, transition, and systemic harm while centering dignity, voice and choice, agency, self-determination, and the right to belong without erasure.
+            </p>
             <div class="card-link">
               <a href="https://ravencarrigg.github.io/peer-values/">Raven's Peer Values</a>
             </div>
