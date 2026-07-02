@@ -715,9 +715,9 @@
         align-self: center;
         padding-top: 0;
       }
-
+    
       .hero-preview {
-        width: min(100%, 420px);
+        width: min(100%, 320px);
         margin-left: auto;
         margin-right: auto;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -796,8 +796,8 @@
 
     @media (max-width: 520px) {
       .hero-preview {
-        grid-template-columns: 1fr;
-        width: min(100%, 310px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: min(100%, 280px);
       }
 
       .buttons {
