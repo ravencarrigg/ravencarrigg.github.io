@@ -241,6 +241,11 @@
       box-sizing: border-box;
     }
 
+    html {
+      text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
@@ -266,16 +271,16 @@
     }
 
     main {
-      width: min(1040px, calc(100% - 2rem));
+      width: min(1040px, calc(100% - clamp(1rem, 4vw, 2rem)));
       margin: 0 auto;
-      padding: 4rem 0;
+      padding: clamp(0.5rem, 5vw, 4rem) 0;
       position: relative;
     }
 
     .page-card {
       background: var(--card);
       border: 1px solid rgba(255, 255, 255, 0.75);
-      border-radius: var(--radius);
+      border-radius: clamp(18px, 4vw, var(--radius));
       box-shadow: var(--shadow);
       backdrop-filter: blur(18px);
       overflow: hidden;
@@ -287,7 +292,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 0.8rem 1.2rem;
-      padding: 1rem 1.25rem;
+      padding: clamp(0.85rem, 2.4vw, 1rem) clamp(1rem, 3vw, 1.25rem);
       border-bottom: 1px solid var(--line);
       background: rgba(255, 255, 255, 0.72);
     }
@@ -320,6 +325,8 @@
       color: var(--blue-dark);
       font-size: 0.9rem;
       font-weight: 700;
+      line-height: 1.15;
+      text-align: center;
       text-decoration: none;
       border: 1px solid transparent;
     }
@@ -345,10 +352,10 @@
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(190px, 260px) 1fr;
-      gap: 2.4rem;
+      grid-template-columns: minmax(170px, 260px) minmax(0, 1fr);
+      gap: clamp(1.4rem, 4vw, 2.4rem);
       align-items: center;
-      padding: 3rem;
+      padding: clamp(1.8rem, 5vw, 3rem);
       border-bottom: 1px solid var(--line);
       background:
         radial-gradient(circle at top left, rgba(252, 231, 243, 0.82), transparent 22rem),
@@ -361,10 +368,10 @@
     }
     
     .hero-image-wrap {
-      width: min(100%, 240px);
+      width: min(100%, clamp(170px, 24vw, 240px));
       aspect-ratio: 1 / 1;
       overflow: hidden;
-      border-radius: 34px;
+      border-radius: clamp(26px, 4vw, 34px);
       box-shadow:
         0 22px 52px rgba(15, 23, 42, 0.22),
         0 0 0 1px rgba(255, 255, 255, 0.9);
@@ -381,7 +388,7 @@
 
     .eyebrow {
       margin: 0 0 0.75rem;
-      font-size: 0.78rem;
+      font-size: clamp(0.72rem, 1.7vw, 0.78rem);
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--blue-dark);
@@ -390,7 +397,7 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(2.35rem, 6vw, 4.35rem);
+      font-size: clamp(2.05rem, 9vw, 4.35rem);
       line-height: 0.95;
       letter-spacing: -0.055em;
       color: #0f172a;
@@ -398,7 +405,7 @@
 
     .subtitle {
       margin: 1rem 0 0;
-      font-size: clamp(1.08rem, 2.2vw, 1.45rem);
+      font-size: clamp(1.02rem, 3.8vw, 1.45rem);
       line-height: 1.25;
       color: var(--muted);
       max-width: 680px;
@@ -427,6 +434,8 @@
       background: #1e3a8a;
       color: white;
       font-weight: 700;
+      line-height: 1.15;
+      text-align: center;
       text-decoration: none;
       box-shadow: 0 12px 28px rgba(30, 58, 138, 0.22);
     }
@@ -449,7 +458,7 @@
     }
 
     .content {
-      padding: 3rem;
+      padding: clamp(1.45rem, 5vw, 3rem);
     }
 
     .breadcrumbs {
@@ -459,7 +468,7 @@
       align-items: center;
       margin: 0 0 1.6rem;
       color: var(--soft);
-      font-size: 0.92rem;
+      font-size: clamp(0.86rem, 2vw, 0.92rem);
       font-weight: 650;
     }
 
@@ -477,7 +486,7 @@
     .intro,
     .closing {
       max-width: 900px;
-      font-size: 1.13rem;
+      font-size: clamp(1.02rem, 2.1vw, 1.13rem);
       color: #1f2937;
     }
 
@@ -488,11 +497,11 @@
 
     .feature-card {
       display: grid;
-      grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
-      gap: 2rem;
+      grid-template-columns: minmax(210px, 320px) minmax(0, 1fr);
+      gap: clamp(1.25rem, 4vw, 2rem);
       align-items: center;
-      margin-top: 2.4rem;
-      padding: 1.5rem;
+      margin-top: clamp(2rem, 5vw, 2.4rem);
+      padding: clamp(1.15rem, 3.5vw, 1.5rem);
       border: 1px solid var(--line);
       border-radius: 26px;
       background:
@@ -501,7 +510,7 @@
     }
 
     .feature-card.reverse {
-      grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+      grid-template-columns: minmax(0, 1fr) minmax(210px, 320px);
     }
 
     .feature-image {
@@ -541,7 +550,7 @@
 
     h2 {
       margin: 0 0 0.9rem;
-      font-size: clamp(1.55rem, 3vw, 2rem);
+      font-size: clamp(1.45rem, 5vw, 2rem);
       line-height: 1.12;
       letter-spacing: -0.045em;
       color: var(--indigo);
@@ -574,8 +583,8 @@
     }
 
     .closing {
-      margin-top: 2.7rem;
-      padding-top: 2.1rem;
+      margin-top: clamp(2.1rem, 5vw, 2.7rem);
+      padding-top: clamp(1.6rem, 4vw, 2.1rem);
       border-top: 1px solid var(--line);
     }
 
@@ -599,6 +608,26 @@
         grid-template-columns: 1fr;
       }
 
+      .hero,
+      .hero > div:last-child {
+        text-align: center;
+      }
+
+      .hero > div:last-child {
+        align-self: center;
+        padding-top: 0;
+      }
+
+      .hero-image-wrap {
+        width: min(62vw, 210px);
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
       .feature-card.reverse .feature-copy {
         order: 2;
       }
@@ -608,10 +637,11 @@
         order: 1;
       }
 
-      .hero-image-wrap,
       .feature-image,
       .fractal-frame {
         max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
@@ -622,35 +652,75 @@
       }
 
       .site-nav {
+        justify-content: center;
+        text-align: center;
         padding: 0.9rem 1rem;
+      }
+
+      .site-nav-title {
+        width: 100%;
+        text-align: center;
       }
 
       .site-nav-links {
         width: 100%;
+        justify-content: center;
+        gap: 0.35rem;
       }
 
       .site-nav-links a {
-        font-size: 0.86rem;
-        padding: 0.42rem 0.62rem;
+        min-height: 2rem;
+        padding: 0.36rem 0.56rem;
+        font-size: clamp(0.78rem, 3.2vw, 0.86rem);
       }
 
       .hero {
-        padding: 2rem;
+        padding: clamp(1.45rem, 6vw, 2rem);
         gap: 1.4rem;
       }
 
       .content {
-        padding: 2rem;
-      }
-
-      .intro,
-      .closing {
-        font-size: 1.02rem;
+        padding: clamp(1.35rem, 5vw, 2rem);
       }
 
       .feature-card {
         padding: 1.15rem;
         margin-top: 2rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .buttons {
+        gap: 0.65rem;
+      }
+
+      .button,
+      .button.secondary {
+        width: 100%;
+      }
+
+      .feature-image,
+      .fractal-frame {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .site-nav-links {
+        gap: 0.28rem;
+      }
+
+      .site-nav-links a {
+        padding: 0.32rem 0.48rem;
+        font-size: 0.78rem;
+      }
+
+      h1 {
+        letter-spacing: -0.045em;
+      }
+
+      .feature-card {
+        border-radius: 22px;
       }
     }
   </style>
