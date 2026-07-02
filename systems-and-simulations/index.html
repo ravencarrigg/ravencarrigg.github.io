@@ -158,6 +158,8 @@
           "Environmental data analysis",
           "Biomechanics",
           "Computational poetics",
+          "Generative poetry",
+          "GNOEMs",
           "Archival text recombination",
           "Social systems",
           "Group dynamics",
@@ -180,7 +182,7 @@
           },
           {
             "@type": "CreativeWork",
-            "name": "Computational poetics and archival text recombination",
+            "name": "Computational poetics, GNOEMs, and archival text recombination",
             "url": "https://ravencarrigg.github.io/systems-and-simulations/#computational-poetics"
           },
           {
@@ -599,6 +601,10 @@
       box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
     }
 
+    .research-card > a {
+      align-self: start;
+    }
+
     .research-card img {
       width: 100%;
       aspect-ratio: 4 / 3;
@@ -607,6 +613,15 @@
       border-radius: 16px;
       background: #dbeafe;
       border: 1px solid rgba(255, 255, 255, 0.9);
+    }
+
+    .research-card img.book-thumbnail {
+      height: auto;
+      min-height: 0;
+      aspect-ratio: auto;
+      object-fit: contain;
+      object-position: center;
+      align-self: start;
     }
 
     .research-copy {
@@ -887,25 +902,32 @@
               This project treats personal archival writing as a living text system: a field of fragments, motifs, images, repetitions, and emotional signals that can be filtered, recombined, and re-arranged into new poetic structures.
             </p>
           </div>
-        
+
           <div class="research-card">
             <a href="https://drive.google.com/file/d/14UH0KKnggybA2Bj8Hc99tWaSwoXE9n6a/view?usp=share_link">
               <img
+                class="book-thumbnail"
                 src="https://drive.google.com/thumbnail?id=14UH0KKnggybA2Bj8Hc99tWaSwoXE9n6a&amp;sz=w512"
                 alt="Cover of Liminal Afterhood: Fragments from the Edge of Survival by Raven Indigo Carrigg."
                 loading="lazy"
               />
             </a>
-        
+
             <div class="research-copy">
-              <h3>Archival fragments, Markov-inspired recombination, and GNOEMs</h3>
+              <h3>Archival fragments, GNOEMs, and Markov-inspired recombination</h3>
+
+              <p>
+                I use the term <strong>GNOEM</strong> as a play on <em>generative poem</em>, inspired by the human-computer poetry experiments documented at <a href="https://gnoetrydaily.wordpress.com/about/">Gnoetry Daily</a>. My use of the term is personal and adapted: a way to describe small poetic organisms shaped from archival fragments, computational recombination, and human editing.
+              </p>
+
               <p>
                 The method began with more than 111,000 words of personal writing spanning over a decade. From that archive, metaphor-dense fragments were selected and processed through phrase-level recombination inspired by Markov chains and n-grams, producing cross-era constellations of language.
               </p>
+
               <p>
                 The final poems were not left as raw machine output. They were manually selected, arranged, edited, and shaped into GNOEMs for <em>Liminal Afterhood</em>, where computational recombination became a way of listening for nonlinear memory, trauma crosstalk, recurrence, rupture, and emergent meaning.
               </p>
-        
+
               <div class="buttons">
                 <a class="button" href="https://drive.google.com/file/d/14UH0KKnggybA2Bj8Hc99tWaSwoXE9n6a/view?usp=share_link">Read Selected Excerpt</a>
                 <a class="button secondary" href="https://ravencarrigg.github.io/liminal-afterhood/">Book Page</a>
