@@ -48,13 +48,18 @@
       },
       {
         "@type": "ImageObject",
+        "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_kahlo_mural_goteborg.webp",
+        "caption": "Frida Kahlo mural image representing endurance, voice, dignity, and survival."
+      },
+      {
+        "@type": "ImageObject",
         "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_incense_mosaic.webp",
         "caption": "Incense mosaic image representing recovery, reflection, and meaning-making."
       },
       {
         "@type": "ImageObject",
-        "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_kahlo_mural_goteborg.webp",
-        "caption": "Frida Kahlo mural image representing endurance, voice, and survival."
+        "url": "https://ravencarrigg.github.io/peer-values/raven_carrigg_oil_fractal.webp",
+        "caption": "Oil fractal image representing complexity, context, and changing conditions."
       }
     ],
     "mainEntity": {
@@ -183,7 +188,7 @@
       position: relative;
     }
 
-    .card {
+    .page-card {
       background: var(--card);
       border: 1px solid rgba(255, 255, 255, 0.75);
       border-radius: var(--radius);
@@ -307,7 +312,7 @@
     }
 
     .values-line {
-      margin: 2.4rem 0 0;
+      margin: 2.3rem 0 0;
       padding: 1rem 0;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
@@ -316,44 +321,41 @@
       letter-spacing: 0.02em;
     }
 
-    .section {
-      margin-top: 3.25rem;
-      padding-top: 2.25rem;
-      border-top: 1px solid var(--line);
-    }
-
-    .section:first-of-type {
-      margin-top: 2.75rem;
-    }
-
-    .section-inner {
-      max-width: 860px;
-    }
-
-    .split-section {
+    .feature-card {
       display: grid;
       grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
       gap: 2rem;
-      align-items: start;
+      align-items: center;
+      margin-top: 2.4rem;
+      padding: 1.5rem;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at top left, rgba(219, 234, 254, 0.72), transparent 20rem),
+        rgba(248, 250, 252, 0.74);
     }
 
-    .split-section.reverse {
+    .feature-card.reverse {
       grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+    }
+
+    .feature-image {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+      background: #dbeafe;
     }
 
     h2 {
       margin: 0 0 0.9rem;
-      font-size: clamp(1.6rem, 3vw, 2.05rem);
+      font-size: clamp(1.55rem, 3vw, 2rem);
       line-height: 1.12;
       letter-spacing: -0.045em;
       color: var(--indigo);
-    }
-
-    h3 {
-      margin: 1.4rem 0 0.4rem;
-      font-size: 1rem;
-      letter-spacing: 0.01em;
-      color: #1f2937;
     }
 
     p {
@@ -375,84 +377,46 @@
     }
 
     .lead {
-      font-size: 1.08rem;
+      font-size: 1.06rem;
       color: #1f2937;
     }
 
-    .section p {
+    .feature-copy p {
       color: var(--muted);
     }
 
-    .section .lead {
+    .feature-copy .lead {
       color: #1f2937;
     }
 
-    .support-image {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      display: block;
-      border-radius: 22px;
-      border: 1px solid rgba(255, 255, 255, 0.9);
-      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
-      background: #dbeafe;
-    }
-
-    .image-caption {
-      margin: 0.75rem 0 0;
-      color: var(--soft);
-      font-size: 0.9rem;
-      line-height: 1.45;
-    }
-
-    .plain-list {
-      margin: 1.1rem 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 0.72rem;
-      color: var(--muted);
-    }
-
-    .plain-list li {
-      padding-left: 1.1rem;
-      position: relative;
-    }
-
-    .plain-list li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.72em;
-      width: 0.42rem;
-      height: 0.42rem;
-      border-radius: 999px;
-      background: var(--blue);
-    }
-
-    .plain-list strong {
-      color: #1f2937;
-    }
-
-    .quote-band {
-      margin-top: 3.25rem;
-      padding: 1.4rem 1.6rem;
+    .closing {
+      margin-top: 2.7rem;
+      padding: 1.5rem 1.6rem;
       border-left: 5px solid var(--blue-dark);
       border-radius: 0 22px 22px 0;
       background:
         radial-gradient(circle at top left, rgba(224, 231, 255, 0.8), transparent 18rem),
         rgba(248, 250, 252, 0.78);
       color: #1f2937;
-      font-size: 1.08rem;
+      font-size: 1.04rem;
     }
 
-    .quote-band p {
-      margin: 0.7rem 0;
+    .closing p:first-child {
+      margin-top: 0;
+    }
+
+    .closing p:last-child {
+      margin-bottom: 0;
+    }
+
+    .closing-line {
+      color: var(--indigo);
+      font-weight: 800;
     }
 
     .details {
-      margin-top: 3rem;
-      padding-top: 2rem;
+      margin-top: 2.6rem;
+      padding-top: 1.8rem;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 0.96rem;
@@ -476,13 +440,21 @@
 
     @media (max-width: 900px) {
       .hero,
-      .split-section,
-      .split-section.reverse {
+      .feature-card,
+      .feature-card.reverse {
         grid-template-columns: 1fr;
       }
 
+      .feature-card.reverse .feature-copy {
+        order: 2;
+      }
+
+      .feature-card.reverse .feature-image {
+        order: 1;
+      }
+
       .hero-image-wrap,
-      .support-image {
+      .feature-image {
         max-width: 420px;
       }
     }
@@ -504,13 +476,17 @@
 
       .intro,
       .lead,
-      .quote-band {
+      .closing {
         font-size: 1.02rem;
       }
 
-      .section {
-        margin-top: 2.6rem;
-        padding-top: 1.8rem;
+      .feature-card {
+        padding: 1.15rem;
+        margin-top: 2rem;
+      }
+
+      .values-line {
+        font-size: 0.96rem;
       }
     }
   </style>
@@ -528,7 +504,7 @@
 
 <body>
   <main>
-    <article class="card">
+    <article class="page-card">
       <header class="hero">
         <div class="hero-image-wrap">
           <img
@@ -543,7 +519,7 @@
           <p class="eyebrow">Lived experience · Recovery · Peer support</p>
           <h1>Peer Values</h1>
           <p class="subtitle">
-            Walking alongside voice, agency, dignity, and possibility.
+            Making room for voice, dignity, and self-determined change.
           </p>
           <p class="byline">
             by Raven Indigo Carrigg
@@ -559,15 +535,15 @@
       <div class="content">
         <section class="intro">
           <p>
-            Peer support begins with the belief that people are not problems to be solved. People are living, changing, relational beings whose needs, stories, strengths, and possibilities often become clearer when they are met with dignity, choice, patience, and practical support.
+            Peer support begins with the belief that people are not problems to be solved. People are whole, changing human beings whose needs, strengths, stories, and choices deserve dignity.
           </p>
 
           <p>
-            I am an OHA-certified Peer Support Specialist in Adult Mental Health based in Portland, Oregon. My lived experience is central to how I understand this work: not as a script for anyone else’s recovery, but as one doorway into values that are larger than any one story. I understand peer support as a practice of walking alongside people as they reconnect with voice, agency, meaning, resources, and self-determination.
+            I am an OHA-certified Peer Support Specialist in Adult Mental Health based in Portland, Oregon. My lived experience is central to how I understand this work: not as a script for anyone else’s recovery, but as one doorway into peer values that are larger than any one story.
           </p>
 
           <p>
-            For me, peer support is grounded in mutuality, harm reduction, cultural humility, trauma-informed practice, and respect for each person’s right to choose their own path.
+            I understand peer support as walking alongside people as they reconnect with voice, agency, meaning, resources, and self-determination, especially when crisis, stigma, trauma, or systems have made those things harder to access.
           </p>
 
           <div class="values-line">
@@ -575,163 +551,80 @@
           </div>
         </section>
 
-        <section class="section">
-          <div class="section-inner">
-            <p class="eyebrow">Peer support philosophy</p>
+        <section class="feature-card">
+          <img
+            class="feature-image"
+            src="raven_carrigg_kahlo_mural_goteborg.webp"
+            alt="Frida Kahlo mural in Göteborg with text about endurance and making more than we think we can."
+          />
+
+          <div class="feature-copy">
+            <p class="eyebrow">Voice, choice, and dignity</p>
             <h2>People are not problems to solve</h2>
 
             <p class="lead">
-              Peer support is not rescue, correction, diagnosis, or control. It is a relationship built through trust, respect, lived experience, and the belief that each person is the expert in their own life.
+              Peer support is not rescue, correction, diagnosis, or control. It is a relationship built through trust, mutuality, respect, and lived experience.
             </p>
 
             <p>
-              Support means walking alongside someone as they identify their own needs, choices, values, resources, and next steps. The goal is not compliance or perfection. The goal is to help make agency more accessible, especially when shame, crisis, overwhelm, stigma, or systems have made a person feel reduced to a problem.
+              Support means staying with someone as they identify their own needs, choices, values, resources, and next steps. The goal is not perfection. The goal is to make agency more accessible while honoring each person’s right to choose their own path.
+            </p>
+          </div>
+        </section>
+
+        <section class="feature-card reverse">
+          <div class="feature-copy">
+            <p class="eyebrow">Recovery as lived practice</p>
+            <h2>Recovery is relational and nonlinear</h2>
+
+            <p class="lead">
+              I do not understand recovery as the absence of symptoms or the arrival at a permanent state of being “better.” I understand it as the ongoing practice of building safety, connection, agency, and meaning over time.
             </p>
 
-            <ul class="plain-list">
-              <li><strong>Voice and choice:</strong> people deserve space to name their own experience and participate in decisions that affect their lives.</li>
-              <li><strong>Dignity and self-determination:</strong> support should reduce shame without taking control away from the person seeking support.</li>
-              <li><strong>Meaning and practical support:</strong> people need room to make sense of what they have lived through, and support with the material realities that shape daily survival.</li>
-            </ul>
+            <p>
+              Recovery can include skills, rest, limits, support, practical resources, and the slow work of finding language for experiences that do not fit a simple timeline. A story does not have to be perfectly linear to be real.
+            </p>
           </div>
+
+          <img
+            class="feature-image"
+            src="raven_carrigg_incense_mosaic.webp"
+            alt="Incense, candles, and mosaic-like light representing recovery, reflection, and meaning-making."
+          />
         </section>
 
-        <section class="section">
-          <div class="split-section">
-            <div>
-              <img
-                class="support-image"
-                src="raven_carrigg_incense_mosaic.webp"
-                alt="Incense, candles, and mosaic-like light representing recovery, reflection, and meaning-making."
-              />
-              <p class="image-caption">
-                Recovery is not always a straight line out of crisis.
-              </p>
-            </div>
+        <section class="feature-card">
+          <img
+            class="feature-image"
+            src="raven_carrigg_oil_fractal.webp"
+            alt="Abstract oil fractal image representing complexity, pattern, and changing conditions."
+          />
 
-            <div>
-              <p class="eyebrow">Recovery as lived practice</p>
-              <h2>Recovery is relational and nonlinear</h2>
-
-              <p class="lead">
-                I do not understand recovery as the absence of symptoms or the arrival at a permanent state of being “better.” I understand it as the ongoing practice of building agency, safety, connection, and meaning over time.
-              </p>
-
-              <p>
-                Recovery can look like learning a nervous system’s warning signs, using skills that help with distress and emotion regulation, asking for help before isolation hardens, resting without shame, naming a limit, finding practical support, or choosing to stay through a moment that once felt impossible.
-              </p>
-
-              <p>
-                It can also mean finding language for what happened when there is no simple plot, no perfect evidence, and no single scene that explains everything. A story does not have to be perfectly linear to be real.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="split-section reverse">
-            <div>
-              <p class="eyebrow">Reality, systems, and survival</p>
-              <h2>Making reality visible, then making next steps possible</h2>
-
-              <p class="lead">
-                Many people arrive in support spaces carrying experiences that have been minimized, misunderstood, pathologized, or treated as too complicated to take seriously.
-              </p>
-
-              <p>
-                Harm may not fit neatly into a form, diagnosis, timeline, or official category. It may live in patterns, silences, power dynamics, material barriers, bureaucratic loops, contradictions, and the ache of not being believed.
-              </p>
-
-              <p>
-                Before someone can navigate a system, ask for help, or make a next choice, they may need support in recovering their own sense of reality: what happened matters, what they noticed matters, what they need matters, and they are still a person here.
-              </p>
-
-              <p>
-                From there, support can become concrete: sorting information, preparing for appointments, identifying resources, documenting what matters, translating confusing processes into plain language, or breaking an overwhelming situation into next steps that preserve dignity and choice.
-              </p>
-            </div>
-
-            <div>
-              <img
-                class="support-image"
-                src="raven_carrigg_kahlo_mural_goteborg.webp"
-                alt="Frida Kahlo mural in Göteborg with text about endurance and making more than we think we can."
-              />
-              <p class="image-caption">
-                Survival can become voice, limit, action, and witness.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section-inner">
-            <p class="eyebrow">Meaning, context, and practical support</p>
+          <div class="feature-copy">
+            <p class="eyebrow">Meaning, systems, and material reality</p>
             <h2>People are shaped by more than one story</h2>
 
             <p class="lead">
-              Across my writing, systems thinking, and peer values, I am interested in how people make meaning inside conditions that are complex, relational, and changing.
+              People are shaped by body, memory, community, culture, power, environment, and material conditions. Support has to make room for that complexity without turning a person into a case file.
             </p>
 
             <p>
-              People are shaped by memory, body, community, material conditions, language, power, and time. Peer support can help create conditions where voice, agency, connection, and next steps become easier to access.
-            </p>
-
-            <p>
-              Meaning-making matters, and so do housing, food, healthcare, safety, transportation, paperwork, money, rest, and community. Support should be able to hold both: the story a person is trying to understand and the practical realities they are trying to survive.
+              Meaning-making matters, and so do housing, healthcare, safety, transportation, paperwork, money, rest, and community. Peer support can help make both reality and next steps clearer.
             </p>
           </div>
         </section>
 
-        <section class="section">
-          <div class="section-inner">
-            <p class="eyebrow">Self-abandonment, service, and dignity</p>
-            <h2>Support should not ask people to disappear</h2>
-
-            <p class="lead">
-              Some people learn early that their value comes from managing other people’s emotions, keeping the peace, being useful, staying agreeable, or carrying more than one person should have to carry.
-            </p>
-
-            <p>
-              Peer support can help interrupt that pattern by honoring the person underneath the role: not just helper, survivor, caretaker, client, patient, problem, or case.
-            </p>
-
-            <p>
-              Needs are not failures. Limits can protect aliveness. Belonging should not require erasure. No one should have to be useful, easy, healed, or perfectly legible to deserve dignity.
-            </p>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section-inner">
-            <p class="eyebrow">Training and grounding</p>
-            <h2>Peer values in practice</h2>
-
-            <p class="lead">
-              I completed peer support training in Adult Mental Health through NAMI Multnomah and am certified through the Oregon Health Authority as a Peer Support Specialist.
-            </p>
-
-            <p>
-              My training emphasized the role and scope of peer support, recovery and resiliency, communication, cultural humility, trauma-informed practice, self-determination, systems navigation, crisis response, confidentiality, and ethical use of lived experience.
-            </p>
-
-            <p>
-              I am especially interested in supporting queer, trans, and neurodivergent people, as well as people navigating mental health challenges, crisis, stigma, invisible or nonlinear experiences, systemic harm, healthcare systems, housing instability, bureaucratic overwhelm, or major life transitions.
-            </p>
-          </div>
-        </section>
-
-        <section class="quote-band">
+        <section class="closing">
           <p>
-            People are not fixed problems. People change in relationship with their bodies, histories, communities, environments, choices, and material conditions.
+            My training through NAMI Multnomah and certification through the Oregon Health Authority ground this work in recovery and resiliency, harm reduction, cultural humility, trauma-informed practice, self-determination, confidentiality, systems navigation, crisis response, and ethical use of lived experience.
           </p>
 
           <p>
-            I believe no one should have to erase themselves in order to stay alive, be believed, access care, or have their humanity recognized.
+            I am especially interested in supporting queer, trans, and neurodivergent people, as well as people navigating mental health challenges, crisis, stigma, systemic harm, healthcare systems, housing instability, bureaucratic overwhelm, or major life transitions.
           </p>
 
-          <p>
-            Recovery is allowed to be nonlinear. Survival is allowed to be complicated. People are allowed to be works in progress and still belong.
+          <p class="closing-line">
+            People are allowed to be works in progress and still belong.
           </p>
         </section>
 
