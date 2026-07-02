@@ -27,52 +27,182 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "@id": "https://ravencarrigg.github.io/systems-and-simulations/#projects",
-    "url": "https://ravencarrigg.github.io/systems-and-simulations/",
-    "name": "Systems and Simulations",
-    "alternateName": "Complex Systems Projects",
-    "description": "Systems and Simulations is a project archive by Raven Indigo Carrigg featuring computational art, artificial life, remote sensing, LANDSAT time series, LLM-based sentiment modeling, Granger causality, integrate-and-fire networks, terrain visualization, mathematical modeling, biomechanics, and complex systems experiments.",
-    "inLanguage": "en",
-    "image": "https://ravencarrigg.github.io/systems-and-simulations/raven_carrigg_artificial_life_lenia_orbium.webp",
-    "creator": {
-      "@type": "Person",
-      "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg",
-      "name": "Raven Indigo Carrigg",
-      "alternateName": [
-        "Raven Carrigg"
-      ],
-      "url": "https://ravencarrigg.github.io/",
-      "image": "https://ravencarrigg.github.io/raven_carrigg_avatar.webp",
-      "pronouns": "they/them",
-      "gender": "Nonbinary",
-      "sameAs": [
-        "https://github.com/ravencarrigg",
-        "https://amazon.com/author/ravencarrigg",
-        "https://www.linkedin.com/in/raven-carrigg",
-        "https://www.youtube.com/@ravencarrigg411"
-      ]
-    },
-    "about": [
-      "Complex systems",
-      "Computational art",
-      "Creative coding",
-      "Artificial life",
-      "Lenia",
-      "Cyclic cellular automata",
-      "Remote sensing",
-      "LANDSAT",
-      "Terrain visualization",
-      "Mathematical modeling",
-      "Environmental data analysis",
-      "Biomechanics",
-      "Social systems",
-      "Group dynamics",
-      "LLM-based sentiment classification",
-      "Granger causality",
-      "Integrate-and-fire networks",
-      "Emergence",
-      "Pattern formation"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ravencarrigg.github.io/#website",
+        "url": "https://ravencarrigg.github.io/",
+        "name": "Raven Indigo Carrigg",
+        "alternateName": "Raven Carrigg",
+        "description": "Personal website and creative archive for Raven Indigo Carrigg, also known publicly as Raven Carrigg.",
+        "publisher": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "@id": "https://ravencarrigg.github.io/#site-navigation",
+        "name": [
+          "Home",
+          "Liminal Afterhood",
+          "Systems and Simulations",
+          "Raven's Peer Values"
+        ],
+        "url": [
+          "https://ravencarrigg.github.io/",
+          "https://ravencarrigg.github.io/liminal-afterhood/",
+          "https://ravencarrigg.github.io/systems-and-simulations/",
+          "https://ravencarrigg.github.io/peer-values/"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://ravencarrigg.github.io/systems-and-simulations/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ravencarrigg.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Systems and Simulations",
+            "item": "https://ravencarrigg.github.io/systems-and-simulations/"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg",
+        "name": "Raven Indigo Carrigg",
+        "alternateName": [
+          "Raven Carrigg"
+        ],
+        "givenName": "Raven",
+        "additionalName": "Indigo",
+        "familyName": "Carrigg",
+        "pronouns": "they/them",
+        "gender": "Nonbinary",
+        "description": "Raven Indigo Carrigg is a queer poet, systems thinker, computational artist, creative coder, computational modeler, and peer support specialist based in Portland, Oregon.",
+        "url": "https://ravencarrigg.github.io/",
+        "image": "https://ravencarrigg.github.io/raven_carrigg_avatar.webp",
+        "sameAs": [
+          "https://github.com/ravencarrigg",
+          "https://amazon.com/author/ravencarrigg",
+          "https://www.linkedin.com/in/raven-carrigg",
+          "https://www.youtube.com/@ravencarrigg411"
+        ],
+        "jobTitle": [
+          "Poet",
+          "Author",
+          "Systems Thinker",
+          "Computational Artist",
+          "Creative Coder",
+          "Computational Modeler",
+          "Peer Support Specialist",
+          "Systems Navigator"
+        ],
+        "knowsAbout": [
+          "Complex systems",
+          "Computational art",
+          "Creative coding",
+          "Artificial life",
+          "Remote sensing",
+          "LANDSAT",
+          "Terrain visualization",
+          "Mathematical modeling",
+          "Environmental data analysis",
+          "Biomechanics",
+          "Emergence",
+          "Pattern formation",
+          "Nonlinear dynamics",
+          "Systems thinking",
+          "Computational poetics"
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://ravencarrigg.github.io/systems-and-simulations/#projects",
+        "url": "https://ravencarrigg.github.io/systems-and-simulations/",
+        "name": "Systems and Simulations",
+        "alternateName": "Complex Systems Projects",
+        "description": "Systems and Simulations is a project archive by Raven Indigo Carrigg featuring computational art, artificial life, remote sensing, LANDSAT time series, LLM-based sentiment modeling, Granger causality, integrate-and-fire networks, terrain visualization, mathematical modeling, biomechanics, and complex systems experiments.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://ravencarrigg.github.io/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://ravencarrigg.github.io/systems-and-simulations/#breadcrumb"
+        },
+        "image": "https://ravencarrigg.github.io/systems-and-simulations/raven_carrigg_artificial_life_lenia_orbium.webp",
+        "creator": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        },
+        "mainEntity": {
+          "@id": "https://ravencarrigg.github.io/#raven-indigo-carrigg"
+        },
+        "about": [
+          "Complex systems",
+          "Computational art",
+          "Creative coding",
+          "Artificial life",
+          "Lenia",
+          "Cyclic cellular automata",
+          "Remote sensing",
+          "LANDSAT",
+          "Terrain visualization",
+          "Mathematical modeling",
+          "Environmental data analysis",
+          "Biomechanics",
+          "Social systems",
+          "Group dynamics",
+          "LLM-based sentiment classification",
+          "Granger causality",
+          "Integrate-and-fire networks",
+          "Emergence",
+          "Pattern formation"
+        ],
+        "hasPart": [
+          {
+            "@type": "CreativeWork",
+            "name": "Lenia and Orbium artificial life visualization",
+            "url": "https://ravencarrigg.github.io/systems-and-simulations/#artificial-life"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "LANDSAT time series visualizations",
+            "url": "https://ravencarrigg.github.io/systems-and-simulations/#landsat"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Integrate-and-fire network model of group dynamics",
+            "url": "https://ravencarrigg.github.io/systems-and-simulations/#group-dynamics"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Squat biomechanics study",
+            "url": "https://ravencarrigg.github.io/systems-and-simulations/#biomechanics"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Digital elevation models",
+            "url": "https://ravencarrigg.github.io/systems-and-simulations/#terrain"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Undergraduate thesis on advection, forest turbulence, and carbon fluxes",
+            "url": "https://ravencarrigg.github.io/systems-and-simulations/#thesis"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Cyclic cellular automata",
+            "url": "https://ravencarrigg.github.io/systems-and-simulations/#cyclic-cellular-automata"
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -135,6 +265,61 @@
       box-shadow: var(--shadow);
       backdrop-filter: blur(18px);
       overflow: hidden;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem 1.2rem;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .site-nav-title {
+      color: var(--indigo);
+      font-weight: 850;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .site-nav-title:hover {
+      color: var(--blue-dark);
+    }
+
+    .site-nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+    }
+
+    .site-nav-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.2rem;
+      padding: 0.45rem 0.72rem;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .site-nav-links a:hover {
+      background: #f8fafc;
+      border-color: var(--line);
+      color: var(--blue);
+    }
+
+    .site-nav-links a[aria-current="page"] {
+      background: var(--lavender);
+      color: var(--indigo);
+      border-color: rgba(49, 46, 129, 0.12);
     }
 
     .hero {
@@ -200,6 +385,28 @@
 
     .content {
       padding: 3rem;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+      margin: 0 0 1.6rem;
+      color: var(--soft);
+      font-size: 0.92rem;
+      font-weight: 650;
+    }
+
+    .breadcrumbs a {
+      color: var(--blue-dark);
+      text-decoration: none;
+    }
+
+    .breadcrumbs a:hover {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
     }
 
     .intro {
@@ -454,6 +661,19 @@
         padding: 0.5rem 0;
       }
 
+      .site-nav {
+        padding: 0.9rem 1rem;
+      }
+
+      .site-nav-links {
+        width: 100%;
+      }
+
+      .site-nav-links a {
+        font-size: 0.86rem;
+        padding: 0.42rem 0.62rem;
+      }
+
       .hero {
         padding: 2rem;
         gap: 1.4rem;
@@ -493,6 +713,17 @@
 <body>
   <main>
     <article class="card">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-nav-title" href="https://ravencarrigg.github.io/">Raven Indigo Carrigg</a>
+
+        <div class="site-nav-links">
+          <a href="https://ravencarrigg.github.io/">Home</a>
+          <a href="https://ravencarrigg.github.io/liminal-afterhood/">Liminal Afterhood</a>
+          <a href="https://ravencarrigg.github.io/systems-and-simulations/" aria-current="page">Systems and Simulations</a>
+          <a href="https://ravencarrigg.github.io/peer-values/">Raven's Peer Values</a>
+        </div>
+      </nav>
+
       <header class="hero">
         <div class="hero-preview" aria-label="Preview images from Raven Carrigg's systems and simulations work">
           <img src="raven_carrigg_artificial_life_lenia_orbium.webp" alt="Lenia Orbium artificial life visualization by Raven Carrigg." />
@@ -518,6 +749,12 @@
       </header>
 
       <div class="content">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="https://ravencarrigg.github.io/">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Systems and Simulations</span>
+        </nav>
+
         <section class="intro">
           <p>
             <em>Systems and Simulations</em> gathers Raven Carrigg’s computational art, complex systems experiments, remote sensing visualizations, mathematical modeling, and interdisciplinary research work.
