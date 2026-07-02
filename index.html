@@ -419,7 +419,8 @@
       grid-template-columns: minmax(180px, 260px) 1fr;
     }
 
-    .systems-preview {
+    .systems-preview,
+    .peer-values-preview {
       width: min(100%, 245px);
       margin: 0 auto;
       display: grid;
@@ -427,29 +428,18 @@
       gap: 0.72rem;
     }
 
-    .systems-preview img {
+    .systems-preview img,
+    .peer-values-preview img {
       width: 100%;
       aspect-ratio: 4 / 3;
       object-fit: cover;
+      object-position: center;
       display: block;
       border-radius: 14px;
       border: 1px solid rgba(255, 255, 255, 0.9);
       box-shadow:
         0 12px 26px rgba(15, 23, 42, 0.14),
         0 0 0 1px rgba(255, 255, 255, 0.72);
-      background: #dbeafe;
-    }
-
-    .peer-values-image {
-      width: min(100%, 245px);
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-      border-radius: 16px;
-      box-shadow:
-        0 18px 42px rgba(15, 23, 42, 0.2),
-        0 0 0 1px rgba(255, 255, 255, 0.85);
       background: #dbeafe;
     }
 
@@ -528,12 +518,12 @@
         grid-template-columns: 1fr;
       }
 
-      .cover,
-      .peer-values-image {
+      .cover {
         max-width: 220px;
       }
 
-      .systems-preview {
+      .systems-preview,
+      .peer-values-preview {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
       }
@@ -571,7 +561,8 @@
     }
 
     @media (max-width: 520px) {
-      .systems-preview {
+      .systems-preview,
+      .peer-values-preview {
         grid-template-columns: 1fr;
       }
     }
@@ -641,7 +632,7 @@
           </div>
         
           <div class="work-card">
-            <h2>Peer values</h2>
+            <h2>Peer support</h2>
             <p>
               Lived-experience practice rooted in walking alongside people through crisis, stigma, transition, and systemic harm while supporting voice, dignity, agency, possibility, self-determination, and the right to belong without erasure.
             </p>
@@ -712,11 +703,16 @@
 
         <section class="book-feature peer-values-feature">
           <div class="cover-wrap">
-            <img
-              class="peer-values-image"
-              src="https://ravencarrigg.github.io/peer-values/raven_carrigg_receiving_energy.webp"
-              alt="Silhouette of Raven Indigo Carrigg standing at the ocean with arms open beneath a dramatic sky."
-            />
+            <div class="peer-values-preview" aria-label="Preview images from Raven Carrigg's peer values page">
+              <img
+                src="https://ravencarrigg.github.io/peer-values/raven_carrigg_receiving_energy.webp"
+                alt="Silhouette of Raven Indigo Carrigg standing at the ocean with arms open beneath a dramatic sky."
+              />
+              <img
+                src="https://ravencarrigg.github.io/peer-values/raven_carrigg_kahlo_mural_goteborg.webp"
+                alt="Frida Kahlo mural in Göteborg with text about endurance and making more than we think we can."
+              />
+            </div>
           </div>
         
           <div class="book-copy">
