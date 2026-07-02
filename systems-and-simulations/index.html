@@ -600,6 +600,11 @@
       background: rgba(255, 255, 255, 0.68);
       box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
     }
+
+    .research-card.book-card {
+      grid-template-columns: minmax(160px, 230px) 1fr;
+      gap: 1.9rem;
+    }
     
     .research-card > a,
     .research-card > img {
@@ -609,6 +614,12 @@
     .research-card > a {
       display: block;
       width: 100%;
+    }
+
+    .research-card.book-card > a {
+      justify-self: center;
+      width: auto;
+      max-width: 100%;
     }
 
     .research-card img {
@@ -621,11 +632,11 @@
       border: 1px solid rgba(255, 255, 255, 0.9);
     }
 
-    .research-card img.book-thumbnail {
+    .research-card.book-card img.book-thumbnail {
       width: auto;
       max-width: 100%;
       height: auto;
-      max-height: 320px;
+      max-height: 300px;
       aspect-ratio: auto;
       object-fit: contain;
       object-position: center;
@@ -683,12 +694,17 @@
         grid-template-columns: 1fr;
       }
 
-      .research-card {
+      .research-card,
+      .research-card.book-card {
         grid-template-columns: 1fr;
       }
 
       .research-card img {
         max-width: 420px;
+      }
+
+      .research-card.book-card img.book-thumbnail {
+        max-height: 320px;
       }
     }
 
@@ -912,7 +928,7 @@
             </p>
           </div>
         
-          <div class="research-card">
+          <div class="research-card book-card">
             <a href="https://ravencarrigg.github.io/liminal-afterhood/">
               <img
                 class="book-thumbnail"
@@ -921,7 +937,7 @@
                 loading="lazy"
               />
             </a>
-        
+          
             <div class="research-copy">
               <h3>Archival fragments, Markov-inspired recombination, and GNOEMs</h3>
         
