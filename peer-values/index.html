@@ -369,6 +369,27 @@
       object-fit: contain;
     }
 
+    .fractal-frame {
+      width: min(100%, 320px);
+      margin: 0 auto;
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+      background: #dbeafe;
+    }
+
+    .fractal-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transform: rotate(90deg) scale(1.34);
+      transform-origin: center;
+    }
+
     h2 {
       margin: 0 0 0.9rem;
       font-size: clamp(1.55rem, 3vw, 2rem);
@@ -433,12 +454,14 @@
         order: 2;
       }
 
-      .feature-card.reverse .feature-image {
+      .feature-card.reverse .feature-image,
+      .feature-card.reverse .fractal-frame {
         order: 1;
       }
 
       .hero-image-wrap,
-      .feature-image {
+      .feature-image,
+      .fractal-frame {
         max-width: 420px;
       }
     }
@@ -522,7 +545,7 @@
           </p>
 
           <p>
-            I know what it feels like to move through acute crises that touch every part of your life, to be misread, invisible, pathologized, or slowly erased by systems that were supposed to offer care. I also know how survival can turn inward, how easy it is to self-abandon and lose your own voice just to stay safe.
+            I know what it feels like to move through acute crises that touch every part of your life: to be misread, made invisible, pathologized, or slowly erased by systems that were supposed to offer care. I also know how survival can turn inward, how easy it is to self-abandon and lose your own voice just to stay safe.
           </p>
 
           <p>
@@ -581,11 +604,12 @@
         </section>
 
         <section class="feature-card">
-          <img
-            class="feature-image"
-            src="raven_carrigg_oil_fractal.webp"
-            alt="Abstract oil fractal image representing complexity, pattern, and changing conditions."
-          />
+          <div class="fractal-frame">
+            <img
+              src="raven_carrigg_oil_fractal.webp"
+              alt="Abstract oil fractal image representing complexity, pattern, and changing conditions."
+            />
+          </div>
 
           <div class="feature-copy">
             <p class="eyebrow">Systems navigation and practical support</p>
@@ -611,7 +635,7 @@
           </p>
         
           <p>
-            I am especially committed to supporting queer, trans, and neurodivergent people, and anyone navigating mental health challenges, crisis, stigma, systemic harm, housing instability, healthcare systems, legal or bureaucratic processes, or major life transitions. My commitment is to dignity, agency, access to care, and the belief that no one should have to disappear inside the systems they are trying to survive.
+            I am open to supporting anyone navigating mental health challenges, crisis, stigma, systemic harm, housing instability, healthcare systems, legal or bureaucratic processes, or major life transitions. I bring particular understanding to work with queer, trans, and neurodivergent people, but my commitment is to dignity, agency, access to care, and the belief that no one should have to disappear inside the systems they are trying to survive.
           </p>
         
           <p class="closing-line">
