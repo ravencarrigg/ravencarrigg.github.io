@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ravencarrigg.github.io/sitemap.xml
+Sitemap: https://ravencarrigg.org/sitemap.xml
