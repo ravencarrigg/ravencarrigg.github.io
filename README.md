@@ -23,10 +23,10 @@ The site is organized around three overlapping areas of work:
 
 ## Pages
 
-- [Homepage](https://ravencarrigg.github.io/)
-- [Liminal Afterhood](https://ravencarrigg.github.io/liminal-afterhood/)
-- [Systems and Simulations](https://ravencarrigg.github.io/systems-and-simulations/)
-- [Raven's Peer Values](https://ravencarrigg.github.io/peer-values/)
+- [Homepage](https://ravencarrigg.org/)
+- [Liminal Afterhood](https://ravencarrigg.org/liminal-afterhood/)
+- [Systems and Simulations](https://ravencarrigg.org/systems-and-simulations/)
+- [Raven's Peer Values](https://ravencarrigg.org/peer-values/)
 
 ## Public links
 
